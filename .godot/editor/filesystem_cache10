@@ -1,19 +1,24 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1772391719
+::res://::1772399885
 export_presets.cfg::TextFile::-1::1772376718::0::1::::<><><>0<>0<><>::
 First Push Test.txt::TextFile::-1::1772373690::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::851287213484822486::1772373637::1772375685::1::::<><><>0<>0<>6d25dd55908d77334fbed96179c4c39a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1772391891
+::res://assets/::1772399439
 icon.svg::CompressedTexture2D::851287213484822486::1772376718::1772376761::1::::<><><>0<>0<>594207d40c0c03c66223184dae8dbc9b<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
-::res://assets/Map/::1772391965
+::res://assets/Map/::1772391976
 baltique11 (Gimp Import).png::CompressedTexture2D::4074117701668608449::1772391646::1772391895::1::::<><><>0<>0<>a6233ac04ba315f7fb914509496a7c6c<>res://.godot/imported/baltique11 (Gimp Import).png-d4fbf55db255c7492cd841918388bfe1.ctex::
 baltique11 (Gimp Import)_only Land.png::CompressedTexture2D::3183762972441452268::1772391966::1772391975::1::::<><><>0<>0<>87c1d8c853bd5f0ef1e2c56fa57e6e64<>res://.godot/imported/baltique11 (Gimp Import)_only Land.png-000a98d420e60b40218328ce2206e0cf.ctex::
 baltique11 (Gimp Import)_only Water.png::CompressedTexture2D::7787547828285326425::1772391943::1772391976::1::::<><><>0<>0<>5ee4ff40749b30dd6b13d0b063e5bae9<>res://.godot/imported/baltique11 (Gimp Import)_only Water.png-480e9ed26f54960014b6f8d50aa6adda.ctex::
 baltique11.svg::BitMap::3866262452139160015::1772391002::1772391895::1::::<><><>0<>0<>60eecd122d1bc355243f559775eacf4d<>res://.godot/imported/baltique11.svg-d7ee90f2cd4671f3bc54f072659db9cb.res::
+::res://assets/Ships/::1772399859
+baltic_princess.png::CompressedTexture2D::8460966726523826217::1772399847::1772399886::1::::<><><>0<>0<>0080f81c6139eb356f5c4aa4dc06bc62<>res://.godot/imported/baltic_princess.png-2b35340043ade3941065efc33175c35b.ctex::
+baltic_queen.png::CompressedTexture2D::4522327827258127976::1772399727::1772399886::1::::<><><>0<>0<>e46620c1c9a98e7f69e82c2894b08a46<>res://.godot/imported/baltic_queen.png-6a215af1823edf8a288ebe1eb1b8a434.ctex::
+megastar.png::CompressedTexture2D::2915327979343331416::1772399560::1772399886::1::::<><><>0<>0<>24c0eacf6f27b6e9c56d4a17d29beac6<>res://.godot/imported/megastar.png-7edc0adff9a0602531cd770939dca293.ctex::
 ::res://exports/::1772376761
 icon2.svg::CompressedTexture2D::6876663858029806727::1772376718::1772376761::1::::<><><>0<>0<>372502f36fe4d55218cf3ee70616058b<>res://.godot/imported/icon2.svg-4926bc69616c2f3bb97951536c11ef8f.ctex::
 ::res://src/::1772376718
-::res://src/entities/::1772391842
+::res://src/entities/::1772392110
+baltic_sea.tscn::PackedScene::2403950227185627270::1772392110::0::1::::<><><>0<>0<><>::uid://di7l1l351scof::::res://assets/Map/baltique11 (Gimp Import)_only Water.png<>uid://blmid1k3wruye::::res://assets/Map/baltique11 (Gimp Import)_only Land.png
 Map.tscn::PackedScene::2149208961223900930::1772391842::0::1::::<><><>0<>0<><>::uid://bybsegsuf7wxl::::res://assets/baltique11 (Gimp Import).png
 Port.tscn::PackedScene::4260570350915064798::1772376718::0::1::::<><><>0<>0<><>::uid://memtt5lum103::::res://assets/icon.svg
 ::res://src/levels/::1772376718
