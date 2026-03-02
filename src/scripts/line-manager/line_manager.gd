@@ -6,6 +6,7 @@ extends Node2D
 @onready var routes_container = $Routes
 
 var is_dragging: bool = false
+var active_line: FerryLine = null
 var start_port: Port = null
 var hovered_port: Port = null # Updated via signals from Ports
 
@@ -17,40 +18,40 @@ func _ready():
 func _on_port_clicked(port: Port):
 	print("onPortclicked:", Port)
 	is_dragging = true
-	start_port = port
+	active_line = ferry_line_scene.instantiate()
+	active_line.line_color = LinePalette.get_next_color()
+	add_child(active_line)
+	
+	active_line.add_port(port)
+	
 	temp_line.visible = true
-	temp_line.points = [port.global_position, port.global_position]
+	temp_line.default_color = active_line.line_color
 
 func _on_port_hovered(port: Port):
-	hovered_port = port
+	if is_dragging and active_line:
+		# Only add if it's not already the most recent port (prevents loops/flicker)
+		if port != active_line.ports.back():
+			active_line.add_port(port)
 
 func _process(_delta):
-	if is_dragging:
-		# Update the "Elastic String" visual
-		temp_line.set_point_position(0, start_port.global_position)
-		temp_line.set_point_position(1, get_global_mouse_position())
+	if is_dragging and active_line:
+		# The "Elastic String" always starts from the LAST port in our chain
+		var last_port_pos = active_line.ports.back().global_position
+		temp_line.points = [last_port_pos, get_global_mouse_position()]
 
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if not event.pressed and is_dragging:
-			print("finalize connection")
-			finalize_connection()
+			finish_dragging()
 
-func finalize_connection():
+func finish_dragging():
 	is_dragging = false
 	temp_line.visible = false
-	print("finalize, ",hovered_port,start_port)
 	
-	# Check if we released over a valid different port
-	if hovered_port and hovered_port != start_port:
-		print("create route")
-		create_route(start_port, hovered_port)
+	# If the line only has 1 port, it's not a route. Delete it.
+	if active_line.ports.size() < 2:
+		active_line.queue_free()
+	else:
+		print("Route created with ", active_line.ports.size(), " ports!")
 	
-	start_port = null
-
-func create_route(p1: Port, p2: Port):
-	var new_route = ferry_line_scene.instantiate()
-	routes_container.add_child(new_route)
-	# This calls the curved drawing logic
-	new_route.add_port(p1)
-	new_route.add_port(p2)
+	active_line = null

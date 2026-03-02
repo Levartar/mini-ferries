@@ -6,9 +6,6 @@ var ports: Array[Port] = []
 @onready var path_node: Path2D = $Path2D
 @onready var line_renderer: Line2D = $Line2D
 
-func _ready():
-	line_renderer.default_color = line_color
-
 func add_port(new_port: Port):
 	ports.append(new_port)
 	_update_navigation_path()
@@ -22,7 +19,7 @@ func _update_navigation_path():
 		if i == 0:
 			curve.add_point(p_pos)
 		else:
-			# Calculate curve handles between ports for that "Nautical Arc"
+			# Calculate curve handles between ports
 			var prev_pos = ports[i-1].global_position
 			var mid = (prev_pos + p_pos) / 2
 			var dir = (p_pos - prev_pos).normalized()
@@ -33,3 +30,4 @@ func _update_navigation_path():
 	
 	path_node.curve = curve
 	line_renderer.points = curve.get_baked_points()
+	line_renderer.default_color = line_color
