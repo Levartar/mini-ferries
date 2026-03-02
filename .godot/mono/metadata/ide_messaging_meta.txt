@@ -1,2 +1,0 @@
-﻿64058
-C:/Users/Eni/Documents/Godot/Godot_net/Godot_v4.6.1-stable_mono_win64.exe

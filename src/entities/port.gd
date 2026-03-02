@@ -1,4 +1,4 @@
-extends Node2D
+extends Area2D
 class_name Port
 
 # We use Enums to define destinations (Mini-Metro style shapes)
@@ -18,7 +18,6 @@ const CREST_MAP = {
 }
 
 # Signals to alert the Game Manager
-signal port_clicked(port_node)
 signal overcrowded(port_node)
 
 @onready var spawn_timer = $SpawnTimer
@@ -28,6 +27,7 @@ func _ready():
 	# Start spawning passengers randomly
 	spawn_timer.wait_time = randf_range(5.0, 10.0)
 	spawn_timer.start()
+	print("SpawnTimer", spawn_timer)
 	
 	# Visual setup: Set sprite based on type (Logic omitted for brevity)
 	update_ui()
@@ -41,6 +41,7 @@ func _on_spawn_timer_timeout():
 
 func generate_passenger():
 	# Pick a random destination that ISN'T this port
+	print("Generating passenger at ", port_type)
 	var available_types = PortType.values()
 	available_types.erase(port_type)
 	var destination = available_types.pick_random()
@@ -49,7 +50,6 @@ func generate_passenger():
 	update_ui()
 
 func update_ui():
-	print("updating UI")
 	# 1. Clear existing icons
 	for child in passenger_ui.get_children():
 		child.queue_free()
@@ -64,10 +64,13 @@ func update_ui():
 		crest_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		crest_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		
+		print("adding crest: ", destination)
 		passenger_ui.add_child(crest_icon)
 
 # Handle Mouse Interaction for Line Drawing
 func _input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_LEFT:
-			port_clicked.emit(self)
+			GameSignals.port_clicked.emit(self)
+	elif event is InputEventMouseMotion:
+		GameSignals.port_hovered.emit(self)

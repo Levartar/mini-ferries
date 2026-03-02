@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c5i8glv1s4mi0"]
+
+[ext_resource type="Script" uid="uid://chv0tsmwqgboo" path="res://src/scripts/ferry-line/ferry_line.gd" id="1_63w0n"]
+
+[sub_resource type="Curve2D" id="Curve2D_63w0n"]
+
+[node name="FerryLine" type="Node2D" unique_id=1696768320]
+script = ExtResource("1_63w0n")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=589284985]
+curve = SubResource("Curve2D_63w0n")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1021591139]
+
+[node name="ShipContainer" type="Node2D" parent="." unique_id=1962091164]

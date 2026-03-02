@@ -6,8 +6,11 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_xh4ph"]
 radius = 90.04999
 
-[node name="Port" type="Node2D" unique_id=1491698354]
+[node name="Port" type="Area2D" unique_id=733375235]
 script = ExtResource("2_p8dw3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=810209978]
+shape = SubResource("CircleShape2D_xh4ph")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2051382067]
 texture = ExtResource("1_xh4ph")
@@ -19,10 +22,5 @@ offset_right = 139.0
 offset_bottom = -15.0
 
 [node name="SpawnTimer" type="Timer" parent="." unique_id=1176739635]
-
-[node name="Area2D" type="Area2D" parent="." unique_id=733375235]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=810209978]
-shape = SubResource("CircleShape2D_xh4ph")
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
