@@ -4,19 +4,16 @@
 [ext_resource type="Script" uid="uid://w82n77wsxjya" path="res://src/entities/port.gd" id="2_p8dw3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xh4ph"]
-radius = 90.04999
+radius = 62.12
 
 [node name="Port" type="Area2D" unique_id=733375235]
 script = ExtResource("2_p8dw3")
-port_type = null
-crest_type = null
-max_capacity = null
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=810209978]
-shape = SubResource("CircleShape2D_xh4ph")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2051382067]
 texture = ExtResource("1_xh4ph")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=810209978]
+shape = SubResource("CircleShape2D_xh4ph")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1213312714]
 offset_left = 99.0
