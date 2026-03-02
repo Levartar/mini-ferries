@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d2pc4x03jiacl" path="res://src/scripts/line-manager/LineManager.tscn" id="1_crpo1"]
 [ext_resource type="PackedScene" uid="uid://b1x38aye2hryc" path="res://src/entities/Port.tscn" id="1_d3unv"]
+[ext_resource type="PackedScene" uid="uid://q5dnrey14wfx" path="res://src/entities/ferry/Ferry.tscn" id="2_jxqds"]
 
 [node name="TestPorts" type="Node2D" unique_id=1757097284]
 
@@ -13,8 +14,10 @@ position = Vector2(188, 417)
 [node name="Port2" parent="." unique_id=1938865386 instance=ExtResource("1_d3unv")]
 position = Vector2(458, 227)
 port_type = 1
-crest_type = 0
 
 [node name="Port3" parent="." unique_id=733375235 instance=ExtResource("1_d3unv")]
 position = Vector2(891, 322)
 port_type = 4
+
+[node name="Area2D" parent="." unique_id=1559693109 instance=ExtResource("2_jxqds")]
+position = Vector2(660, 554)

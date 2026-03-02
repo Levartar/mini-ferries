@@ -2,10 +2,12 @@ extends Area2D
 class_name Port
 
 # We use Enums to define destinations (Mini-Metro style shapes)
+enum PortCountry { ESTONIA, FINLAND, DENMARK, SWEDEN, LATVIA, GERMANY, POLAND }
 enum PortType { LOADING, PASSENGER, LUXUS, CONTAINER, LIGHTHOUSE }
 enum CrestType { DENMARK, HELSINKI, SWEDEN, RIGA }
 
 @export var port_type: PortType = PortType.LOADING
+@export var port_country: PortCountry = PortCountry.DENMARK
 @export var crest_type: CrestType = CrestType.DENMARK
 @export var max_capacity: int = 10
 
