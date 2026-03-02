@@ -1,4 +1,45 @@
 63f7b34db8d8cdea90c76aacccf841ec
+<<<<<<< HEAD
+::res://::1772447229
+export_presets.cfg::TextFile::-1::1772376154::0::1::::<><><>0<>0<><>::
+First Push Test.txt::TextFile::-1::1772375994::0::1::::<><><>0<>0<><>::
+::res://assets/::1772455035
+icon.svg::CompressedTexture2D::851287213484822486::1772373227::1772376095::1::::<><><>0<>0<>594207d40c0c03c66223184dae8dbc9b<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
+::res://assets/sprites/::1772455035
+::res://assets/sprites/crests/::1772400631
+denmark_crest.png::CompressedTexture2D::8017846293760478465::1772400580::1772400631::1::::<><><>0<>0<>05592b052b2cc2447245f01c93fa6f3f<>res://.godot/imported/denmark_crest.png-5ec01ac615a0b23e7c0173be086b4463.ctex::
+helsinki_crest.png::CompressedTexture2D::7268930527460291779::1772400507::1772400631::1::::<><><>0<>0<>489983469ab839bdf3a8c724c01f71a6<>res://.godot/imported/helsinki_crest.png-ecba824d8aacfa9b753827ef33748d1e.ctex::
+riga_crest.png::CompressedTexture2D::1406097140925071048::1772400445::1772400631::1::::<><><>0<>0<>f61ba82a2d509abcfea051d4a2c62cdb<>res://.godot/imported/riga_crest.png-26c7b2dd5f5ac966c6e47c109f2318a0.ctex::
+sweden_crest.png::CompressedTexture2D::4028537649897092836::1772400614::1772400631::1::::<><><>0<>0<>43c15805a5e70d35a317835471d6c12a<>res://.godot/imported/sweden_crest.png-a5f6bbb46e9a8b893cd8e382c94462d9.ctex::
+::res://assets/sprites/ports/::1772454421
+container.png::CompressedTexture2D::4058552340943407817::1772455099::1772455154::1::::<><><>0<>0<>6fcf84d1ec3bd0d7127f19cb00017be9<>res://.godot/imported/container.png-e3e897a058e7ca11b435584c50caba7e.ctex::
+lighthouse.png::CompressedTexture2D::4443263215683848473::1772455066::1772455154::1::::<><><>0<>0<>13d6dd5a16dc7f7dd9f6fe5c185b222d<>res://.godot/imported/lighthouse.png-333a6375b4b4838d1d2e3312d786505e.ctex::
+loading.png::CompressedTexture2D::4264348836184733092::1772454328::1772454421::1::::<><><>0<>0<>4d2038ae9f28abce703c3cc4f761862b<>res://.godot/imported/loading.png-2898d446bacbdb3f1bcc6ad84a9fa30c.ctex::
+luxus.png::CompressedTexture2D::4970927332540365745::1772455127::1772455154::1::::<><><>0<>0<>d533250839972da171ae911db14e1e5e<>res://.godot/imported/luxus.png-94b42f7c8cb1d195f4b23d04beae2846.ctex::
+passenger.png::CompressedTexture2D::1376191338935492086::1772455149::1772455154::1::::<><><>0<>0<>b533135bb12da0e1ad4ea07ca2e3939a<>res://.godot/imported/passenger.png-7757d0e7049630eee426ba334d95194d.ctex::
+::res://exports/::1772376108
+icon2.svg::CompressedTexture2D::6876663858029806727::1772376105::1772376108::1::::<><><>0<>0<>372502f36fe4d55218cf3ee70616058b<>res://.godot/imported/icon2.svg-4926bc69616c2f3bb97951536c11ef8f.ctex::
+::res://src/::1772375351
+::res://src/entities/::1772454906
+Map.tscn::PackedScene::2149208961223900930::1772376095::0::1::::<><><>0<>0<><>::uid://memtt5lum103::::res://assets/icon.svg
+port.gd::GDScript::1613943331251637740::1772454927::0::1::::Port<>Area2D<><>0<>0<><>::
+Port.tscn::PackedScene::4260570350915064798::1772454906::0::1::::<><><>0<>0<><>::uid://memtt5lum103::::res://assets/icon.svg<>uid://w82n77wsxjya::::res://src/entities/port.gd
+::res://src/levels/::1772455012
+test.tscn::PackedScene::1615197628873231540::1772376320::0::1::::<><><>0<>0<><>::uid://memtt5lum103::::res://assets/icon.svg
+test_ports.tscn::PackedScene::994235350172646984::1772455012::0::1::::<><><>0<>0<><>::uid://d2pc4x03jiacl::::res://src/scripts/line-manager/LineManager.tscn<>uid://b1x38aye2hryc::::res://src/entities/Port.tscn
+::res://src/scripts/::1772447750
+game_signals.gd::GDScript::3349128834264590663::1772448958::0::1::::<>Node<><>0<>0<><>::
+test.svg::CompressedTexture2D::1087693537058589928::1772376054::1772376065::1::::<><><>0<>0<>5af9f71d9ffc0666578261406b3a8b3f<>res://.godot/imported/test.svg-3d654c1c1ef3e56f12fcec7be0384568.ctex::
+::res://src/scripts/ferry-line/::1772454422
+FerryLine.tscn::PackedScene::6897036685488647905::1772454422::0::1::::<><><>0<>0<><>::uid://chv0tsmwqgboo::::res://src/scripts/ferry-line/ferry_line.gd
+ferry_line.gd::GDScript::5309068025570192478::1772453647::0::1::::FerryLine<>Node2D<><>0<>0<><>::
+::res://src/scripts/line-manager/::1772453292
+LineManager.tscn::PackedScene::9085500965567546207::1772448125::0::1::::<><><>0<>0<><>::uid://c148r0rdxrs86::::res://src/scripts/line-manager/line_manager.gd
+line_manager.gd::GDScript::6659653615613614945::1772453292::0::1::::<>Node2D<><>0<>0<><>::
+::res://src/ui/::1772445552
+line_colors.gd::GDScript::7072233170407008823::1772445552::0::1::::LinePalette<>Resource<><>0<>0<><>::
+test2.svg::CompressedTexture2D::4786707176193391458::1772376075::1772376078::1::::<><><>0<>0<>d46d350e4bd2a35b489dda94f46b4aac<>res://.godot/imported/test2.svg-7916dfe9efa1141b00356e86eb464c0e.ctex::
+=======
 ::res://::1772376759
 export_presets.cfg::TextFile::-1::1772376718::0::1::::<><><>0<>0<><>::
 First Push Test.txt::TextFile::-1::1772373690::0::1::::<><><>0<>0<><>::
@@ -17,3 +58,4 @@ test.tscn::PackedScene::1615197628873231540::1772376718::0::1::::<><><>0<>0<><>:
 test.svg::CompressedTexture2D::1087693537058589928::1772376718::1772376761::1::::<><><>0<>0<>5af9f71d9ffc0666578261406b3a8b3f<>res://.godot/imported/test.svg-3d654c1c1ef3e56f12fcec7be0384568.ctex::
 ::res://src/ui/::1772376718
 test2.svg::CompressedTexture2D::4786707176193391458::1772376718::1772376761::1::::<><><>0<>0<>d46d350e4bd2a35b489dda94f46b4aac<>res://.godot/imported/test2.svg-7916dfe9efa1141b00356e86eb464c0e.ctex::
+>>>>>>> origin/main

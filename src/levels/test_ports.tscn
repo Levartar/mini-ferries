@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ofu58cjvg7iy"]
+
+[ext_resource type="PackedScene" uid="uid://d2pc4x03jiacl" path="res://src/scripts/line-manager/LineManager.tscn" id="1_crpo1"]
+[ext_resource type="PackedScene" uid="uid://b1x38aye2hryc" path="res://src/entities/Port.tscn" id="1_d3unv"]
+
+[node name="TestPorts" type="Node2D" unique_id=1757097284]
+
+[node name="LineManager" parent="." unique_id=1811220622 instance=ExtResource("1_crpo1")]
+
+[node name="Port" parent="." unique_id=1491698354 instance=ExtResource("1_d3unv")]
+position = Vector2(188, 417)
+
+[node name="Port2" parent="." unique_id=1938865386 instance=ExtResource("1_d3unv")]
+position = Vector2(458, 227)
+port_type = 1
+crest_type = 0
+
+[node name="Port3" parent="." unique_id=733375235 instance=ExtResource("1_d3unv")]
+position = Vector2(891, 322)
+port_type = 4
