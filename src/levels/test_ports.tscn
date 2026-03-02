@@ -13,7 +13,8 @@ position = Vector2(188, 417)
 [node name="Port2" parent="." unique_id=1938865386 instance=ExtResource("1_d3unv")]
 position = Vector2(458, 227)
 port_type = 1
+crest_type = 0
 
 [node name="Port3" parent="." unique_id=733375235 instance=ExtResource("1_d3unv")]
 position = Vector2(891, 322)
-port_type = 2
+port_type = 4

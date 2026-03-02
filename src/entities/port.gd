@@ -2,19 +2,29 @@ extends Area2D
 class_name Port
 
 # We use Enums to define destinations (Mini-Metro style shapes)
-enum PortType { DENMARK, HELSINKI, SWEDEN, RIGA }
+enum PortType { LOADING, PASSENGER, LUXUS, CONTAINER, LIGHTHOUSE }
+enum CrestType { DENMARK, HELSINKI, SWEDEN, RIGA }
 
-@export var port_type: PortType = PortType.DENMARK
+@export var port_type: PortType = PortType.LOADING
+@export var crest_type: CrestType = CrestType.DENMARK
 @export var max_capacity: int = 10
 
 var waiting_passengers: Array[PortType] = []
 
 # Mapping types to their specific crest textures
 const CREST_MAP = {
-	PortType.DENMARK: preload("res://assets/sprites/crests/denmark_crest.png"),
-	PortType.HELSINKI: preload("res://assets/sprites/crests/helsinki_crest.png"),
-	PortType.SWEDEN: preload("res://assets/sprites/crests/sweden_crest.png"),
-	PortType.RIGA: preload("res://assets/sprites/crests/riga_crest.png")
+	CrestType.DENMARK: preload("res://assets/sprites/crests/denmark_crest.png"),
+	CrestType.HELSINKI: preload("res://assets/sprites/crests/helsinki_crest.png"),
+	CrestType.SWEDEN: preload("res://assets/sprites/crests/sweden_crest.png"),
+	CrestType.RIGA: preload("res://assets/sprites/crests/riga_crest.png")
+}
+
+const PORT_MAP = {
+	PortType.LOADING: preload("res://assets/sprites/ports/loading.png"),
+	PortType.PASSENGER: preload("res://assets/sprites/ports/passenger.png"),
+	PortType.LUXUS: preload("res://assets/sprites/ports/luxus.png"),
+	PortType.CONTAINER: preload("res://assets/sprites/ports/container.png"),
+	PortType.LIGHTHOUSE: preload("res://assets/sprites/ports/lighthouse.png")
 }
 
 # Signals to alert the Game Manager
@@ -24,6 +34,7 @@ signal overcrowded(port_node)
 @onready var passenger_ui = $HBoxContainer
 
 func _ready():
+	$Sprite2D.texture = PORT_MAP[port_type]
 	# Start spawning passengers randomly
 	spawn_timer.wait_time = randf_range(5.0, 10.0)
 	spawn_timer.start()
@@ -42,7 +53,7 @@ func _on_spawn_timer_timeout():
 func generate_passenger():
 	# Pick a random destination that ISN'T this port
 	print("Generating passenger at ", port_type)
-	var available_types = PortType.values()
+	var available_types = CrestType.values()
 	available_types.erase(port_type)
 	var destination = available_types.pick_random()
 	
