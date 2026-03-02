@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c4ykmsfcg5c4f"]
+
+[ext_resource type="Texture2D" uid="uid://blmid1k3wruye" path="res://assets/Map/baltique11 (Gimp Import)_only Land.png" id="1_wkog8"]
+
+[node name="Land" type="Node2D" unique_id=2138396762]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=965667613]
+texture = ExtResource("1_wkog8")

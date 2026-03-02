@@ -1,8 +1,22 @@
 [gd_scene format=3 uid="uid://b1x38aye2hryc"]
 
-[ext_resource type="Texture2D" uid="uid://memtt5lum103" path="res://assets/icon.svg" id="1_xh4ph"]
+[ext_resource type="Texture2D" uid="uid://memtt5lum103" path="res://icon.svg" id="1_xh4ph"]
 
 [node name="Port" type="Node2D" unique_id=1491698354]
+editor_description = "List of Ports (Country):
+Tallinn (Estonia)
+Helsinki (Finland)
+Turku (Finland)
+Marienhamn (Finland)
+Stockholm (Sweden)
+Visby (Sweden)
+Riga (Latvia)
+Rostock (Germany)
+
+Potential Ports (Country):
+Umea (Sweden)
+Malmö (Sweden)
+Gdansk (Poland)"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2051382067]
 texture = ExtResource("1_xh4ph")

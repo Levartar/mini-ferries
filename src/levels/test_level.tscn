@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b6lv7mgxmjx3s"]
+
+[ext_resource type="PackedScene" uid="uid://dl1cvcmg6ywou" path="res://src/entities/Sea.tscn" id="1_hdcac"]
+[ext_resource type="PackedScene" uid="uid://bau5uljm6x5t3" path="res://src/entities/Map_marks.tscn" id="2_br53r"]
+[ext_resource type="PackedScene" uid="uid://c4ykmsfcg5c4f" path="res://src/entities/Land.tscn" id="3_7hvae"]
+
+[node name="Test_level" type="Node2D" unique_id=234209174]
+
+[node name="Sea" parent="." unique_id=2138396762 instance=ExtResource("1_hdcac")]
+
+[node name="Map Marks" parent="." unique_id=830546108 instance=ExtResource("2_br53r")]
+
+[node name="Land" parent="." unique_id=193335558 instance=ExtResource("3_7hvae")]
