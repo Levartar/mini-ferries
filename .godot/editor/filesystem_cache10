@@ -1,4 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
+<<<<<<< HEAD
 ::res://::1772447229
 export_presets.cfg::TextFile::-1::1772376154::0::1::::<><><>0<>0<><>::
 First Push Test.txt::TextFile::-1::1772375994::0::1::::<><><>0<>0<><>::
@@ -38,3 +39,23 @@ line_manager.gd::GDScript::6659653615613614945::1772453292::0::1::::<>Node2D<><>
 ::res://src/ui/::1772445552
 line_colors.gd::GDScript::7072233170407008823::1772445552::0::1::::LinePalette<>Resource<><>0<>0<><>::
 test2.svg::CompressedTexture2D::4786707176193391458::1772376075::1772376078::1::::<><><>0<>0<>d46d350e4bd2a35b489dda94f46b4aac<>res://.godot/imported/test2.svg-7916dfe9efa1141b00356e86eb464c0e.ctex::
+=======
+::res://::1772376759
+export_presets.cfg::TextFile::-1::1772376718::0::1::::<><><>0<>0<><>::
+First Push Test.txt::TextFile::-1::1772373690::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::851287213484822486::1772373637::1772375685::1::::<><><>0<>0<>6d25dd55908d77334fbed96179c4c39a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1772376718
+icon.svg::CompressedTexture2D::851287213484822486::1772376718::1772376761::1::::<><><>0<>0<>594207d40c0c03c66223184dae8dbc9b<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
+::res://exports/::1772376718
+icon2.svg::CompressedTexture2D::6876663858029806727::1772376718::1772376761::1::::<><><>0<>0<>372502f36fe4d55218cf3ee70616058b<>res://.godot/imported/icon2.svg-4926bc69616c2f3bb97951536c11ef8f.ctex::
+::res://src/::1772376718
+::res://src/entities/::1772376718
+Map.tscn::PackedScene::2149208961223900930::1772376718::0::1::::<><><>0<>0<><>::uid://memtt5lum103::::res://assets/icon.svg
+Port.tscn::PackedScene::4260570350915064798::1772376718::0::1::::<><><>0<>0<><>::uid://memtt5lum103::::res://assets/icon.svg
+::res://src/levels/::1772376718
+test.tscn::PackedScene::1615197628873231540::1772376718::0::1::::<><><>0<>0<><>::uid://memtt5lum103::::res://assets/icon.svg
+::res://src/scripts/::1772376718
+test.svg::CompressedTexture2D::1087693537058589928::1772376718::1772376761::1::::<><><>0<>0<>5af9f71d9ffc0666578261406b3a8b3f<>res://.godot/imported/test.svg-3d654c1c1ef3e56f12fcec7be0384568.ctex::
+::res://src/ui/::1772376718
+test2.svg::CompressedTexture2D::4786707176193391458::1772376718::1772376761::1::::<><><>0<>0<>d46d350e4bd2a35b489dda94f46b4aac<>res://.godot/imported/test2.svg-7916dfe9efa1141b00356e86eb464c0e.ctex::
+>>>>>>> origin/main
