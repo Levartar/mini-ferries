@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://d2pc4x03jiacl"]
+
+[ext_resource type="Script" uid="uid://c148r0rdxrs86" path="res://src/scripts/line-manager/line_manager.gd" id="1_jyhr6"]
+
+[node name="LineManager" type="Node2D" unique_id=1811220622]
+script = ExtResource("1_jyhr6")
+
+[node name="TempLine" type="Line2D" parent="." unique_id=576701256]
+
+[node name="Routes" type="Node2D" parent="." unique_id=1165015187]
