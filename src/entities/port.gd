@@ -54,7 +54,6 @@ func _on_spawn_timer_timeout():
 
 func generate_passenger():
 	# Pick a random destination that ISN'T this port
-	print("Generating passenger at ", port_type)
 	var available_types = CrestType.values()
 	available_types.erase(port_type)
 	var destination = available_types.pick_random()
@@ -77,7 +76,6 @@ func update_ui():
 		crest_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		crest_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		
-		print("adding crest: ", destination)
 		passenger_ui.add_child(crest_icon)
 
 # Handle Mouse Interaction for Line Drawing

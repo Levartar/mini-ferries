@@ -165,26 +165,28 @@ func _process(delta):
 			check_port_arrivals()
 		
 		# 3. Check for End-of-Line behavior
-		if current_path_follow.progress_ratio >= 1.0 and direction == 1:
+		if current_path_follow.progress_ratio >= 0.95 and direction == 1:
 			handle_end_of_line()
-		elif current_path_follow.progress_ratio <= 0.0 and direction == -1:
+		elif current_path_follow.progress_ratio <= 0.05 and direction == -1:
 			handle_start_of_line()
 
 func handle_end_of_line():
 	# Check if this is a loop (first port == last port)
 	if assigned_line.ports.size() > 0 and assigned_line.ports.front() == assigned_line.ports.back():
 		# It's a loop - wrap around to the beginning
+		print("Reached end of loop, wrapping around")
 		current_path_follow.progress_ratio = 0.0
 	else:
 		# It's not a loop - reverse direction
+		print("Reached end of line, reversing direction")
 		direction *= -1
-		$ShipSprite.scale.y = direction
+		#$ShipSprite.scale.x = direction
 		current_path_follow.progress_ratio = 1.0  # Clamp to prevent overshooting
 
 func handle_start_of_line():
 	# When going backwards and reaching the start, reverse direction
 	direction *= -1
-	$ShipSprite.scale.y = direction
+	#$ShipSprite.scale.x = direction
 	current_path_follow.progress_ratio = 0.0  # Clamp to prevent undershooting
 
 func check_port_arrivals():
