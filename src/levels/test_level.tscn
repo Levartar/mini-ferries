@@ -3,11 +3,52 @@
 [ext_resource type="PackedScene" uid="uid://dl1cvcmg6ywou" path="res://src/entities/Sea.tscn" id="1_hdcac"]
 [ext_resource type="PackedScene" uid="uid://bau5uljm6x5t3" path="res://src/entities/Map_marks.tscn" id="2_br53r"]
 [ext_resource type="PackedScene" uid="uid://c4ykmsfcg5c4f" path="res://src/entities/Land.tscn" id="3_7hvae"]
+[ext_resource type="PackedScene" uid="uid://b1x38aye2hryc" path="res://src/entities/Port.tscn" id="4_br53r"]
+[ext_resource type="PackedScene" uid="uid://q5dnrey14wfx" path="res://src/entities/ferry/Ferry.tscn" id="6_45v6v"]
+[ext_resource type="PackedScene" uid="uid://d2pc4x03jiacl" path="res://src/scripts/line-manager/LineManager.tscn" id="7_q3sum"]
 
 [node name="Test_level" type="Node2D" unique_id=234209174]
 
-[node name="Sea" parent="." unique_id=2138396762 instance=ExtResource("1_hdcac")]
+[node name="Land" parent="." unique_id=193335558 instance=ExtResource("3_7hvae")]
 
 [node name="Map Marks" parent="." unique_id=830546108 instance=ExtResource("2_br53r")]
 
-[node name="Land" parent="." unique_id=193335558 instance=ExtResource("3_7hvae")]
+[node name="Sea" parent="." unique_id=2138396762 instance=ExtResource("1_hdcac")]
+
+[node name="Tallinn" parent="." unique_id=733375235 instance=ExtResource("4_br53r")]
+position = Vector2(451, 102)
+scale = Vector2(0.5, 0.5)
+port_country = 0
+
+[node name="Helsinki" parent="." unique_id=1754922240 instance=ExtResource("4_br53r")]
+position = Vector2(455, -68)
+scale = Vector2(0.5, 0.5)
+port_country = 1
+crest_type = 1
+
+[node name="Stockholm" parent="." unique_id=1149620650 instance=ExtResource("4_br53r")]
+position = Vector2(-223, 119)
+scale = Vector2(0.5, 0.5)
+port_country = 3
+crest_type = 2
+
+[node name="Marienhamn" parent="." unique_id=1619686198 instance=ExtResource("4_br53r")]
+position = Vector2(-23, -46)
+scale = Vector2(0.5, 0.5)
+port_country = 1
+crest_type = 1
+
+[node name="Riga" parent="." unique_id=1389752049 instance=ExtResource("4_br53r")]
+position = Vector2(368, 557)
+scale = Vector2(0.5, 0.5)
+port_country = 4
+crest_type = 3
+
+[node name="LineManager" parent="." unique_id=1811220622 instance=ExtResource("7_q3sum")]
+
+[node name="Area2D" parent="." unique_id=1559693109 instance=ExtResource("6_45v6v")]
+position = Vector2(660, 554)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=674862777]
+position = Vector2(140, 215)
+zoom = Vector2(0.75, 0.75)
