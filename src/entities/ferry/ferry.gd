@@ -15,7 +15,7 @@ var current_path_follow: PathFollow2D = null
 # Core Variables
 var direction: int = 1 # 1 = Forward (0->1), -1 = Backward (1->0)
 var current_state: TravelState = TravelState.IDLE
-var onboard_passengers: Array[Port.PortType] = []
+var onboard_passengers: Array[Port.CityNames] = []
 
 # Drag and Drop
 var is_dragging: bool = false
@@ -165,9 +165,9 @@ func _process(delta):
 			check_port_arrivals()
 		
 		# 3. Check for End-of-Line behavior
-		if current_path_follow.progress_ratio >= 0.95 and direction == 1:
+		if current_path_follow.progress_ratio >= 0.98 and direction == 1:
 			handle_end_of_line()
-		elif current_path_follow.progress_ratio <= 0.05 and direction == -1:
+		elif current_path_follow.progress_ratio <= 0.02 and direction == -1:
 			handle_start_of_line()
 
 func handle_end_of_line():
@@ -215,38 +215,41 @@ func process_passengers(port: Port):
 	# 1. UNLOAD: Remove passengers whose destination is THIS port
 	var delivered_count = 0
 	for i in range(onboard_passengers.size() - 1, -1, -1): # Iterate backwards to remove
-		if onboard_passengers[i] == port.port_type:
+		if onboard_passengers[i] == port.city_name:
 			onboard_passengers.remove_at(i)
 			delivered_count += 1
 	
 	if delivered_count > 0:
 		print("Delivered ", delivered_count, " passengers!")
-		# GameSignals.passengers_delivered.emit(delivered_count) # Future Score!
+		GameSignals.passengers_delivered.emit(delivered_count) # Future Score!
+		
+	# 2. IDENTIFY VALID DESTINATIONS
+	# The ferry should only pick up people whose destination exists on THIS specific line
+	var valid_destinations: Array[Port.CityNames] = []
+	for p in assigned_line.ports:
+		valid_destinations.append(p.city_name)
 	
-	# 2. LOAD: Take new passengers who match destinations on this line
-	# We only load if we have space.
-	var space_available = passenger_capacity - onboard_passengers.size()
-	if space_available > 0 and port.waiting_passengers.size() > 0:
-		
-		# Get the list of all port types (city crests) served by THIS line
-		var stations_on_line = assigned_line.get_port_types_on_route()
-		
-		# Check the port's waiting list
-		for i in range(port.waiting_passengers.size() -1, -1, -1):
-			var passenger_dest = port.waiting_passengers[i]
+	# 3. LOAD PASSENGERS
+	var space_left = passenger_capacity - onboard_passengers.size()
+	
+	# We look at the port's waiting list
+	# Again, iterate backwards to safely remove passengers from the Port's array
+	for i in range(port.waiting_passengers.size() - 1, -1, -1):
+		if space_left <= 0:
+			break
 			
-			# Does this passenger want to go to a stop on our route?
-			if stations_on_line.has(passenger_dest):
-				onboard_passengers.append(passenger_dest)
-				port.waiting_passengers.remove_at(i) # Remove from port queue
-				space_available -= 1
-				
-				# Stop if full
-				if space_available <= 0: break 
+		var passenger_dest = port.waiting_passengers[i]
 		
-		# Refresh the visuals
-		port.update_ui() # Crucial: Update the Port's HBoxContainer
-		update_ui() # Crucial: Update the Ship's HBoxContainer
+		# Does this line actually go where they want to go?
+		if valid_destinations.has(passenger_dest):
+			# Move from Port to Ferry
+			onboard_passengers.append(passenger_dest)
+			port.waiting_passengers.remove_at(i)
+			space_left -= 1
+	
+	# 4. REFRESH VISUALS
+	port.update_ui() # Update the modulated hands at the dock
+	update_ui()      # Update the modulated hands on the ship
 
 func update_ui():
 	# (Logic to update the ship's PassengerContainer with City Crests, similar to port.gd)
