@@ -1,5 +1,0 @@
-res://src/levels/test_level.tscn
-res://src/entities/Sea.tscn
-res://src/entities/Land.tscn
-res://src/scripts/line-manager/line_manager.gd
-res://src/scripts/line-manager/LineManager.tscn

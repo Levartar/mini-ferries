@@ -1,19 +1,19 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1772535111
+::res://::1772544419
 export_presets.cfg::TextFile::-1::1772376718::0::1::::<><><>0<>0<><>::
 First Push Test.txt::TextFile::-1::1772373690::0::1::::<><><>0<>0<><>::
-::res://assets/::1772455558
+::res://assets/::1772542338
 icon.svg::CompressedTexture2D::851287213484822486::1772376718::1772535112::1::::<><><>0<>0<>594207d40c0c03c66223184dae8dbc9b<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
-::res://assets/Map/::1772449989
-baltique11 (Gimp Import).png::CompressedTexture2D::4074117701668608449::1772446884::1772446964::1::::<><><>0<>0<>a6233ac04ba315f7fb914509496a7c6c<>res://.godot/imported/baltique11 (Gimp Import).png-d4fbf55db255c7492cd841918388bfe1.ctex::
-baltique11 (Gimp Import)_only Land.png::CompressedTexture2D::3183762972441452268::1772449986::1772449989::1::::<><><>0<>0<>87c1d8c853bd5f0ef1e2c56fa57e6e64<>res://.godot/imported/baltique11 (Gimp Import)_only Land.png-000a98d420e60b40218328ce2206e0cf.ctex::
-baltique11 (Gimp Import)_only UI.png::CompressedTexture2D::8295277450278648751::1772449637::1772449640::1::::<><><>0<>0<>3b929e7569381d2f5f711d3a3fae9c49<>res://.godot/imported/baltique11 (Gimp Import)_only UI.png-7236523aefa00d588e9fc3f8c785d988.ctex::
-baltique11 (Gimp Import)_only Water.png::CompressedTexture2D::7787547828285326425::1772449616::1772449640::1::::<><><>0<>0<>5ee4ff40749b30dd6b13d0b063e5bae9<>res://.godot/imported/baltique11 (Gimp Import)_only Water.png-480e9ed26f54960014b6f8d50aa6adda.ctex::
-baltique11.svg::BitMap::3866262452139160015::1772446884::1772446964::1::::<><><>0<>0<>60eecd122d1bc355243f559775eacf4d<>res://.godot/imported/baltique11.svg-d7ee90f2cd4671f3bc54f072659db9cb.res::
-::res://assets/Ships/::1772446964
-baltic_princess.png::CompressedTexture2D::8460966726523826217::1772446884::1772446964::1::::<><><>0<>0<>0080f81c6139eb356f5c4aa4dc06bc62<>res://.godot/imported/baltic_princess.png-2b35340043ade3941065efc33175c35b.ctex::
-baltic_queen.png::CompressedTexture2D::4522327827258127976::1772446884::1772446964::1::::<><><>0<>0<>e46620c1c9a98e7f69e82c2894b08a46<>res://.godot/imported/baltic_queen.png-6a215af1823edf8a288ebe1eb1b8a434.ctex::
-megastar.png::CompressedTexture2D::2915327979343331416::1772446884::1772446964::1::::<><><>0<>0<>24c0eacf6f27b6e9c56d4a17d29beac6<>res://.godot/imported/megastar.png-7edc0adff9a0602531cd770939dca293.ctex::
+::res://assets/Map/::1772544362
+baltique11 (Gimp Import).png::CompressedTexture2D::4074117701668608449::1772542338::1772542338::1::::<><><>0<>0<>a6233ac04ba315f7fb914509496a7c6c<>res://.godot/imported/baltique11 (Gimp Import).png-d4fbf55db255c7492cd841918388bfe1.ctex::
+baltique11 (Gimp Import)_only Land.png::CompressedTexture2D::3183762972441452268::1772542338::1772542338::1::::<><><>0<>0<>87c1d8c853bd5f0ef1e2c56fa57e6e64<>res://.godot/imported/baltique11 (Gimp Import)_only Land.png-000a98d420e60b40218328ce2206e0cf.ctex::
+baltique11 (Gimp Import)_only UI.png::CompressedTexture2D::8295277450278648751::1772542338::1772542338::1::::<><><>0<>0<>3b929e7569381d2f5f711d3a3fae9c49<>res://.godot/imported/baltique11 (Gimp Import)_only UI.png-7236523aefa00d588e9fc3f8c785d988.ctex::
+baltique11 (Gimp Import)_only Water.png::CompressedTexture2D::7787547828285326425::1772542338::1772542338::1::::<><><>0<>0<>5ee4ff40749b30dd6b13d0b063e5bae9<>res://.godot/imported/baltique11 (Gimp Import)_only Water.png-480e9ed26f54960014b6f8d50aa6adda.ctex::
+baltique11.svg::BitMap::3866262452139160015::1772542338::1772544362::1::::<><><>0<>0<>60eecd122d1bc355243f559775eacf4d<>res://.godot/imported/baltique11.svg-d7ee90f2cd4671f3bc54f072659db9cb.res::
+::res://assets/Ships/::1772542338
+baltic_princess.png::CompressedTexture2D::8460966726523826217::1772542338::1772542338::1::::<><><>0<>0<>0080f81c6139eb356f5c4aa4dc06bc62<>res://.godot/imported/baltic_princess.png-2b35340043ade3941065efc33175c35b.ctex::
+baltic_queen.png::CompressedTexture2D::4522327827258127976::1772542338::1772542338::1::::<><><>0<>0<>e46620c1c9a98e7f69e82c2894b08a46<>res://.godot/imported/baltic_queen.png-6a215af1823edf8a288ebe1eb1b8a434.ctex::
+megastar.png::CompressedTexture2D::2915327979343331416::1772542338::1772542338::1::::<><><>0<>0<>24c0eacf6f27b6e9c56d4a17d29beac6<>res://.godot/imported/megastar.png-7edc0adff9a0602531cd770939dca293.ctex::
 ::res://assets/sprites/::1772455558
 ::res://assets/sprites/crests/::1772535112
 denmark_crest.png::CompressedTexture2D::8017846293760478465::1772455558::1772535112::1::::<><><>0<>0<>05592b052b2cc2447245f01c93fa6f3f<>res://.godot/imported/denmark_crest.png-5ec01ac615a0b23e7c0173be086b4463.ctex::
@@ -26,35 +26,35 @@ lighthouse.png::CompressedTexture2D::4443263215683848473::1772455558::1772535112
 loading.png::CompressedTexture2D::4264348836184733092::1772455558::1772535112::1::::<><><>0<>0<>4d2038ae9f28abce703c3cc4f761862b<>res://.godot/imported/loading.png-2898d446bacbdb3f1bcc6ad84a9fa30c.ctex::
 luxus.png::CompressedTexture2D::4970927332540365745::1772455558::1772535112::1::::<><><>0<>0<>d533250839972da171ae911db14e1e5e<>res://.godot/imported/luxus.png-94b42f7c8cb1d195f4b23d04beae2846.ctex::
 passenger.png::CompressedTexture2D::1376191338935492086::1772455558::1772535112::1::::<><><>0<>0<>b533135bb12da0e1ad4ea07ca2e3939a<>res://.godot/imported/passenger.png-7757d0e7049630eee426ba334d95194d.ctex::
-::res://exports/::1772376761
+::res://exports/::1772535112
 icon2.svg::CompressedTexture2D::6876663858029806727::1772376718::1772535112::1::::<><><>0<>0<>372502f36fe4d55218cf3ee70616058b<>res://.godot/imported/icon2.svg-4926bc69616c2f3bb97951536c11ef8f.ctex::
 ::res://src/::1772376718
-::res://src/entities/::1772535092
-baltic_princess.tscn::PackedScene::2885334021887000744::1772446884::0::1::::<><><>0<>0<><>::uid://dsss5eanl4ruf::::res://assets/Ships/baltic_princess.png
-baltic_queen.tscn::PackedScene::2502759144268812734::1772446884::0::1::::<><><>0<>0<><>::uid://b5owcw4c06piu::::res://assets/Ships/baltic_queen.png
-Land.tscn::PackedScene::6858492451685495223::1772450191::0::1::::<><><>0<>0<><>::uid://blmid1k3wruye::::res://assets/Map/baltique11 (Gimp Import)_only Land.png
-Map.tscn::PackedScene::2149208961223900930::1772446884::0::1::::<><><>0<>0<><>::uid://bybsegsuf7wxl::::res://assets/baltique11 (Gimp Import).png
-Map_marks.tscn::PackedScene::2429566056683070594::1772450243::0::1::::<><><>0<>0<><>::uid://dqgkai3yfi3uh::::res://assets/Map/baltique11 (Gimp Import)_only UI.png
-megastar.tscn::PackedScene::1662422477006208744::1772446884::0::1::::<><><>0<>0<><>::uid://bhsha46ndunwi::::res://assets/Ships/megastar.png
+::res://src/entities/::1772542338
+baltic_princess.tscn::PackedScene::2885334021887000744::1772542338::0::1::::<><><>0<>0<><>::uid://dsss5eanl4ruf::::res://assets/Ships/baltic_princess.png
+baltic_queen.tscn::PackedScene::2502759144268812734::1772542338::0::1::::<><><>0<>0<><>::uid://b5owcw4c06piu::::res://assets/Ships/baltic_queen.png
+Land.tscn::PackedScene::6858492451685495223::1772542338::0::1::::<><><>0<>0<><>::uid://blmid1k3wruye::::res://assets/Map/baltique11 (Gimp Import)_only Land.png
+Map.tscn::PackedScene::2149208961223900930::1772542338::0::1::::<><><>0<>0<><>::uid://bybsegsuf7wxl::::res://assets/baltique11 (Gimp Import).png
+Map_marks.tscn::PackedScene::2429566056683070594::1772542338::0::1::::<><><>0<>0<><>::uid://dqgkai3yfi3uh::::res://assets/Map/baltique11 (Gimp Import)_only UI.png
+megastar.tscn::PackedScene::1662422477006208744::1772542338::0::1::::<><><>0<>0<><>::uid://bhsha46ndunwi::::res://assets/Ships/megastar.png
 port.gd::GDScript::1613943331251637740::1772535087::0::1::::Port<>Area2D<><>0<>0<><>::
 Port.tscn::PackedScene::4260570350915064798::1772535092::0::1::::<><><>0<>0<><>::uid://memtt5lum103::::res://assets/icon.svg<>uid://w82n77wsxjya::::res://src/entities/port.gd
-Sea.tscn::PackedScene::7985172212260110776::1772450211::0::1::::<><><>0<>0<><>::uid://di7l1l351scof::::res://assets/Map/baltique11 (Gimp Import)_only Water.png
-ship.tscn::PackedScene::8370027635038778826::1772448579::0::1::::<><><>0<>0<><>::uid://dsss5eanl4ruf::::res://assets/Ships/baltic_princess.png<>uid://b5owcw4c06piu::::res://assets/Ships/baltic_queen.png<>uid://bhsha46ndunwi::::res://assets/Ships/megastar.png
+Sea.tscn::PackedScene::7985172212260110776::1772542338::0::1::::<><><>0<>0<><>::uid://di7l1l351scof::::res://assets/Map/baltique11 (Gimp Import)_only Water.png
+ship.tscn::PackedScene::8370027635038778826::1772542338::0::1::::<><><>0<>0<><>::uid://dsss5eanl4ruf::::res://assets/Ships/baltic_princess.png<>uid://b5owcw4c06piu::::res://assets/Ships/baltic_queen.png<>uid://bhsha46ndunwi::::res://assets/Ships/megastar.png
 ::res://src/entities/ferry/::1772535087
 ferry.gd::GDScript::163409940190194760::1772535087::0::1::::Ferry<>Area2D<><>0<>0<><>::
 Ferry.tscn::PackedScene::1185159097331904929::1772535087::0::1::::<><><>0<>0<><>::uid://clflqsqlx4oq::::res://src/entities/ferry/ferry.gd<>uid://memtt5lum103::::res://assets/icon.svg
-::res://src/levels/::1772535087
+::res://src/levels/::1772542338
 test.tscn::PackedScene::1615197628873231540::1772376718::0::1::::<><><>0<>0<><>::uid://memtt5lum103::::res://assets/icon.svg
-test_level.tscn::PackedScene::4586315834630275214::1772450387::0::1::::<><><>0<>0<><>::uid://dl1cvcmg6ywou::::res://src/entities/Sea.tscn<>uid://bau5uljm6x5t3::::res://src/entities/Map_marks.tscn<>uid://c4ykmsfcg5c4f::::res://src/entities/Land.tscn
+test_level.tscn::PackedScene::4586315834630275214::1772542338::0::1::::<><><>0<>0<><>::uid://dl1cvcmg6ywou::::res://src/entities/Sea.tscn<>uid://bau5uljm6x5t3::::res://src/entities/Map_marks.tscn<>uid://c4ykmsfcg5c4f::::res://src/entities/Land.tscn<>uid://b1x38aye2hryc::::res://src/entities/Port.tscn<>uid://q5dnrey14wfx::::res://src/entities/ferry/Ferry.tscn<>uid://d2pc4x03jiacl::::res://src/scripts/line-manager/LineManager.tscn
 test_ports.tscn::PackedScene::994235350172646984::1772535087::0::1::::<><><>0<>0<><>::uid://d2pc4x03jiacl::::res://src/scripts/line-manager/LineManager.tscn<>uid://b1x38aye2hryc::::res://src/entities/Port.tscn<>uid://q5dnrey14wfx::::res://src/entities/ferry/Ferry.tscn
-::res://src/scripts/::1772535087
+::res://src/scripts/::1772544405
 game_signals.gd::GDScript::3349128834264590663::1772455558::0::1::::<>Node<><>0<>0<><>::
 time_manager.gd::GDScript::6607671459086296915::1772535087::0::1::::<>Node<><>0<>0<><>::
 ::res://src/scripts/ferry-line/::1772535087
 FerryLine.tscn::PackedScene::6897036685488647905::1772455558::0::1::::<><><>0<>0<><>::uid://chv0tsmwqgboo::::res://src/scripts/ferry-line/ferry_line.gd
 ferry_line.gd::GDScript::5309068025570192478::1772535087::0::1::::FerryLine<>Node2D<><>0<>0<><>::
-::res://src/scripts/line-manager/::1772455558
-LineManager.tscn::PackedScene::9085500965567546207::1772455558::0::1::::<><><>0<>0<><>::uid://c148r0rdxrs86::::res://src/scripts/line-manager/line_manager.gd
-line_manager.gd::GDScript::6659653615613614945::1772455558::0::1::::<>Node2D<><>0<>0<><>::
+::res://src/scripts/line-manager/::1772542338
+LineManager.tscn::PackedScene::9085500965567546207::1772541460::0::1::::<><><>0<>0<><>::uid://c148r0rdxrs86::::res://src/scripts/line-manager/line_manager.gd
+line_manager.gd::GDScript::6659653615613614945::1772542338::0::1::::<>Node2D<><>0<>0<><>::
 ::res://src/ui/::1772457947
 line_colors.gd::GDScript::7072233170407008823::1772455558::0::1::::LinePalette<>Resource<><>0<>0<><>::
