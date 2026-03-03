@@ -2,10 +2,12 @@ extends Area2D
 class_name Port
 
 # We use Enums to define destinations (Mini-Metro style shapes)
+enum PortCountry { ESTONIA, FINLAND, DENMARK, SWEDEN, LATVIA, GERMANY, POLAND }
 enum PortType { LOADING, PASSENGER, LUXUS, CONTAINER, LIGHTHOUSE }
 enum CrestType { DENMARK, HELSINKI, SWEDEN, RIGA }
 
 @export var port_type: PortType = PortType.LOADING
+@export var port_country: PortCountry = PortCountry.DENMARK
 @export var crest_type: CrestType = CrestType.DENMARK
 @export var max_capacity: int = 10
 
@@ -52,7 +54,6 @@ func _on_spawn_timer_timeout():
 
 func generate_passenger():
 	# Pick a random destination that ISN'T this port
-	print("Generating passenger at ", port_type)
 	var available_types = CrestType.values()
 	available_types.erase(port_type)
 	var destination = available_types.pick_random()
@@ -75,7 +76,6 @@ func update_ui():
 		crest_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		crest_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		
-		print("adding crest: ", destination)
 		passenger_ui.add_child(crest_icon)
 
 # Handle Mouse Interaction for Line Drawing

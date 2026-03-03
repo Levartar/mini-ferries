@@ -31,3 +31,10 @@ func _update_navigation_path():
 	path_node.curve = curve
 	line_renderer.points = curve.get_baked_points()
 	line_renderer.default_color = line_color
+
+func get_port_types_on_route() -> Array:
+	var types = []
+	for port in ports:
+		if not types.has(port.port_type):
+			types.append(port.port_type)
+	return types

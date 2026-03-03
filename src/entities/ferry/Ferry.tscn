@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://q5dnrey14wfx"]
+
+[ext_resource type="Script" uid="uid://clflqsqlx4oq" path="res://src/entities/ferry/ferry.gd" id="1_ixylv"]
+[ext_resource type="Texture2D" uid="uid://memtt5lum103" path="res://assets/icon.svg" id="2_74amc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74amc"]
+size = Vector2(40, 15)
+
+[node name="Ferry" type="Area2D" unique_id=1559693109]
+z_index = 10
+script = ExtResource("1_ixylv")
+
+[node name="ShipSprite" type="Sprite2D" parent="." unique_id=1258137469]
+scale = Vector2(0.3, 0.1)
+texture = ExtResource("2_74amc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1323680985]
+shape = SubResource("RectangleShape2D_74amc")
+
+[node name="PassengerContainer" type="HBoxContainer" parent="." unique_id=1114975826]
+offset_right = 40.0
+offset_bottom = 40.0
