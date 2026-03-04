@@ -11,3 +11,5 @@ res://src/scripts/ferry-line/LineHandle.tscn
 res://src/scripts/ferry-line/line_handle.gd
 res://src/scripts/ferry-line/ferry_line.gd
 res://src/scripts/ferry-line/FerryLine.tscn
+res://src/ui/ScoreUi.tscn
+res://src/ui/score_ui.gd

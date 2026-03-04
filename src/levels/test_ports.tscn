@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://d2pc4x03jiacl" path="res://src/scripts/line-manager/LineManager.tscn" id="1_crpo1"]
 [ext_resource type="PackedScene" uid="uid://b1x38aye2hryc" path="res://src/entities/Port.tscn" id="1_d3unv"]
 [ext_resource type="PackedScene" uid="uid://q5dnrey14wfx" path="res://src/entities/ferry/Ferry.tscn" id="2_jxqds"]
+[ext_resource type="PackedScene" uid="uid://cxyk465q78udg" path="res://src/ui/ScoreUi.tscn" id="4_pidaj"]
 
 [node name="TestPorts" type="Node2D" unique_id=1757097284]
 
@@ -28,3 +29,12 @@ position = Vector2(236, 226)
 
 [node name="Ferry2" parent="." unique_id=1037342684 instance=ExtResource("2_jxqds")]
 position = Vector2(236, 131)
+
+[node name="ScoreUi" parent="." unique_id=1289090932 instance=ExtResource("4_pidaj")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 69.0
+offset_bottom = 64.0
+grow_horizontal = 1
+grow_vertical = 1
