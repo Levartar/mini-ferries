@@ -19,6 +19,7 @@ config/icon="res://assets/icon.svg"
 
 GameSignals="*uid://bnylwr7kgf3h8"
 GameManager="*uid://c065no18cjgco"
+GameConstants="*uid://dynfnaafxtupw"
 
 [dotnet]
 

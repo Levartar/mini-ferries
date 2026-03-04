@@ -30,4 +30,4 @@ func _generate_global_passenger():
 	
 	# 3. Tell the specific Port to add the passenger
 	if ports_in_play.has(start_city):
-		ports_in_play.get(start_city).add_passenger(Port.CityNames.keys()[dest_city])
+		ports_in_play.get(start_city).add_passenger(dest_city)

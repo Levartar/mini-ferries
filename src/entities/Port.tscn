@@ -4,24 +4,34 @@
 [ext_resource type="Script" uid="uid://w82n77wsxjya" path="res://src/entities/port.gd" id="2_p8dw3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xh4ph"]
-radius = 20.0
+radius = 30.0
+
+[sub_resource type="SystemFont" id="SystemFont_p8dw3"]
 
 [node name="Port" type="Area2D" unique_id=733375235]
 script = ExtResource("2_p8dw3")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2051382067]
-scale = Vector2(2, 2)
+scale = Vector2(4, 4)
 texture = ExtResource("2_nb6n3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=810209978]
 shape = SubResource("CircleShape2D_xh4ph")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1213312714]
-offset_left = 17.0
+offset_left = 31.0
 offset_top = -40.0
-offset_right = 57.0
+offset_right = 71.0
 
 [node name="Label" type="Label" parent="." unique_id=1253756721]
-offset_right = 40.0
-offset_bottom = 23.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -23.5
+offset_top = 27.0
+offset_right = 23.5
+offset_bottom = 50.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = SubResource("SystemFont_p8dw3")
 text = "Name"

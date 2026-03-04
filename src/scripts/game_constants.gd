@@ -1,0 +1,11 @@
+extends Node
+
+enum CityNames {
+	TALLINN,
+	HELSINKI,
+	STOCKHOLM,
+	RIGA,
+	TURKU,
+	MARIENHAMN,
+	ROSTOCK
+}
