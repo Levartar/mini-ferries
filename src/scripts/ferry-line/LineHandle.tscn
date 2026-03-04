@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d2l3ri3rluwbj"]
+
+[ext_resource type="Texture2D" uid="uid://b14ra4y1tpqfl" path="res://assets/sprites/icons/resize_c_cross_diagonal.png" id="1_epn3n"]
+[ext_resource type="Script" uid="uid://c8hgpphi3nnt1" path="res://src/scripts/ferry-line/line_handle.gd" id="1_y2lno"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y2lno"]
+radius = 35.0
+
+[node name="Area2D" type="Area2D" unique_id=1974497021]
+script = ExtResource("1_y2lno")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1545370673]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_epn3n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=58229403]
+shape = SubResource("CircleShape2D_y2lno")
