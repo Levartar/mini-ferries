@@ -9,15 +9,22 @@
 [node name="LineManager" parent="." unique_id=1811220622 instance=ExtResource("1_crpo1")]
 
 [node name="Port" parent="." unique_id=1491698354 instance=ExtResource("1_d3unv")]
-position = Vector2(188, 417)
+position = Vector2(893, 231)
+city_name = 1
 
 [node name="Port2" parent="." unique_id=1938865386 instance=ExtResource("1_d3unv")]
-position = Vector2(458, 227)
-port_type = 1
+position = Vector2(533, 224)
+city_name = 2
 
 [node name="Port3" parent="." unique_id=733375235 instance=ExtResource("1_d3unv")]
 position = Vector2(891, 322)
-port_type = 4
 
-[node name="Area2D" parent="." unique_id=1559693109 instance=ExtResource("2_jxqds")]
-position = Vector2(660, 554)
+[node name="Port4" parent="." unique_id=2143156552 instance=ExtResource("1_d3unv")]
+position = Vector2(154, 545)
+city_name = 5
+
+[node name="Ferry" parent="." unique_id=1559693109 instance=ExtResource("2_jxqds")]
+position = Vector2(236, 226)
+sail_speed = 0.05
+passenger_capacity = 6
+docking_time = 2.0

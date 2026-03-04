@@ -1,26 +1,37 @@
 [gd_scene format=3 uid="uid://b1x38aye2hryc"]
 
-[ext_resource type="Texture2D" uid="uid://memtt5lum103" path="res://assets/icon.svg" id="1_xh4ph"]
+[ext_resource type="Texture2D" uid="uid://ctjdnunknhi65" path="res://assets/sprites/icons/tile_0204.png" id="2_nb6n3"]
 [ext_resource type="Script" uid="uid://w82n77wsxjya" path="res://src/entities/port.gd" id="2_p8dw3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xh4ph"]
-radius = 62.12
+radius = 30.0
+
+[sub_resource type="SystemFont" id="SystemFont_p8dw3"]
 
 [node name="Port" type="Area2D" unique_id=733375235]
 script = ExtResource("2_p8dw3")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2051382067]
-texture = ExtResource("1_xh4ph")
+scale = Vector2(4, 4)
+texture = ExtResource("2_nb6n3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=810209978]
 shape = SubResource("CircleShape2D_xh4ph")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1213312714]
-offset_left = 99.0
-offset_top = -55.0
-offset_right = 139.0
-offset_bottom = -15.0
+offset_left = 31.0
+offset_top = -40.0
+offset_right = 71.0
 
-[node name="SpawnTimer" type="Timer" parent="." unique_id=1176739635]
-
-[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
+[node name="Label" type="Label" parent="." unique_id=1253756721]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -23.5
+offset_top = 27.0
+offset_right = 23.5
+offset_bottom = 50.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = SubResource("SystemFont_p8dw3")
+text = "Name"
