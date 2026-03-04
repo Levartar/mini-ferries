@@ -5,3 +5,5 @@ res://src/scripts/game_manager.gd
 res://src/entities/Port.tscn
 res://src/entities/ferry/Ferry.tscn
 res://src/entities/ferry/ferry.gd
+res://src/scripts/line-manager/LineManager.tscn
+res://src/scripts/line-manager/line_manager.gd
