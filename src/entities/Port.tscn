@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b1x38aye2hryc"]
 
-[ext_resource type="Texture2D" uid="uid://ctjdnunknhi65" path="res://assets/sprites/icons/tile_0204.png" id="2_nb6n3"]
+[ext_resource type="Texture2D" uid="uid://doldv6y3bnc86" path="res://assets/sprites/icons/tracking_horizontal.png" id="2_nb6n3"]
 [ext_resource type="Script" uid="uid://w82n77wsxjya" path="res://src/entities/port.gd" id="2_p8dw3"]
-[ext_resource type="Texture2D" uid="uid://bnpb8of34hmlm" path="res://assets/sprites/icons/tile_0182.png" id="3_nb6n3"]
+[ext_resource type="Texture2D" uid="uid://oojfi4eteeuv" path="res://assets/sprites/icons/mark_exclamation.png" id="3_w3nwo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xh4ph"]
 radius = 30.0
@@ -43,4 +43,4 @@ visible = false
 modulate = Color(1, 0, 0, 1)
 position = Vector2(0, -52)
 scale = Vector2(2, 2)
-texture = ExtResource("3_nb6n3")
+texture = ExtResource("3_w3nwo")

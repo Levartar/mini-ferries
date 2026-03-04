@@ -11,8 +11,8 @@ signal overcrowded(port_node)
 
 @onready var passenger_ui = $HBoxContainer
 @onready var passenger_container = $HBoxContainer
-const HAND_ICON = preload("res://assets/sprites/icons/tile_0138.png")
-const PORT_ICON = preload("res://assets/sprites/icons/tile_0204.png")
+const HAND_ICON = preload("res://assets/sprites/icons/hand_small_open.png")
+const PORT_ICON = preload("res://assets/sprites/icons/tracking_horizontal.png")
 
 func _ready():
 	$Sprite2D.texture = PORT_ICON

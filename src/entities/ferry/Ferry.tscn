@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://q5dnrey14wfx"]
 
 [ext_resource type="Script" uid="uid://clflqsqlx4oq" path="res://src/entities/ferry/ferry.gd" id="1_ixylv"]
-[ext_resource type="Texture2D" uid="uid://b72elpekelblt" path="res://assets/sprites/icons/tile_0205.png" id="2_74amc"]
+[ext_resource type="Texture2D" uid="uid://khcjw47dfhql" path="res://assets/sprites/icons/tracking_horizontal_up.png" id="2_74amc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_74amc"]
 size = Vector2(60, 60)
@@ -9,9 +9,6 @@ size = Vector2(60, 60)
 [node name="Ferry" type="Area2D" unique_id=1559693109]
 z_index = 10
 script = ExtResource("1_ixylv")
-sail_speed = null
-passenger_capacity = null
-docking_time = null
 
 [node name="ShipSprite" type="Sprite2D" parent="." unique_id=1258137469]
 scale = Vector2(3, 3)

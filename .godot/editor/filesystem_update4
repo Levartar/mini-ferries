@@ -3,3 +3,5 @@ res://src/levels/test_ports.tscn
 res://src/entities/port.gd
 res://src/scripts/game_manager.gd
 res://src/entities/Port.tscn
+res://src/entities/ferry/Ferry.tscn
+res://src/entities/ferry/ferry.gd

@@ -25,7 +25,7 @@ var drag_offset: Vector2 = Vector2.ZERO
 var arrival_cooldown: float = 0.0
 const ARRIVAL_COOLDOWN_TIME: float = 10.0
 
-var HAND_ICON = preload("res://assets/sprites/icons/tile_0138.png")
+var HAND_ICON = preload("res://assets/sprites/icons/hand_small_open.png")
 @onready var passenger_container = $PassengerContainer
 
 func _ready():
