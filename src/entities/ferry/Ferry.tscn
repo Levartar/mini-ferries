@@ -11,7 +11,7 @@ z_index = 10
 script = ExtResource("1_ixylv")
 
 [node name="ShipSprite" type="Sprite2D" parent="." unique_id=1258137469]
-scale = Vector2(3, 3)
+position = Vector2(0, -8)
 texture = ExtResource("2_74amc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1323680985]

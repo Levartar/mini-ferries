@@ -14,7 +14,7 @@ subpixel_positioning = 0
 script = ExtResource("2_p8dw3")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2051382067]
-scale = Vector2(4, 4)
+scale = Vector2(2, 2)
 texture = ExtResource("2_nb6n3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=810209978]
@@ -30,9 +30,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -23.5
-offset_top = 27.0
+offset_top = 46.0
 offset_right = 23.5
-offset_bottom = 50.0
+offset_bottom = 69.0
 grow_horizontal = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = SubResource("SystemFont_p8dw3")
@@ -41,6 +41,5 @@ text = "Name"
 [node name="WarningSprite" type="Sprite2D" parent="." unique_id=257612419]
 visible = false
 modulate = Color(1, 0, 0, 1)
-position = Vector2(0, -52)
-scale = Vector2(2, 2)
+position = Vector2(0, -81)
 texture = ExtResource("3_w3nwo")

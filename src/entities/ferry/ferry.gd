@@ -23,7 +23,7 @@ var drag_offset: Vector2 = Vector2.ZERO
 
 # Arrival cooldown
 var arrival_cooldown: float = 0.0
-const ARRIVAL_COOLDOWN_TIME: float = 10.0
+const ARRIVAL_COOLDOWN_TIME: float = 5.0
 
 var HAND_ICON = preload("res://assets/sprites/icons/hand_small_open.png")
 @onready var passenger_container = $PassengerContainer
@@ -263,8 +263,6 @@ func update_ui():
 	for destination in onboard_passengers:
 		var icon = TextureRect.new()
 		icon.texture = HAND_ICON
-		icon.custom_minimum_size = Vector2(16, 16)
-		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		
 		# MODULATE
 		icon.modulate = LinePalette.CITY_COLORS[destination]
