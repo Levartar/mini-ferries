@@ -1,7 +1,6 @@
 extends Node
 
-var active_cities: Array = []
-var ports_in_play: Dictionary = {} # Key: CityName, Value: PortNode
+var ports_in_play: Dictionary = {} # Key: CityName (enum), Value: PortNode
 
 # Timing
 var day_timer: Timer
@@ -19,14 +18,13 @@ func setup_timers():
 	spawn_timer.start()
 
 func _generate_global_passenger():
-	print("generate passenger", active_cities)
-	active_cities = ports_in_play.keys()
-	if active_cities.size() < 2: return
+	print("generate passenger", ports_in_play.keys())
+	if ports_in_play.size() < 2: return
 	
 	# 1. Pick a random starting city
-	var start_city = active_cities.pick_random()
+	var start_city = ports_in_play.keys().pick_random()
 	# 2. Pick a destination (not the same as start)
-	var possible_destinations = active_cities.duplicate()
+	var possible_destinations = ports_in_play.keys().duplicate()
 	possible_destinations.erase(start_city)
 	var dest_city = possible_destinations.pick_random()
 	

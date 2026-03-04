@@ -39,7 +39,7 @@ func add_passenger(destination_city: String):
 func update_ui():
 	# 1. Clear existing icons
 	for child in passenger_ui.get_children():
-		child.queue_free()
+		child.queue_free()   
 	
 	# 2. Add a tiny TextureRect for every passenger waiting
 	for destination in waiting_passengers:
