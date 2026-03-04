@@ -17,7 +17,7 @@ const PORT_ICON = preload("res://assets/sprites/icons/tile_0204.png")
 func _ready():
 	$Sprite2D.texture = PORT_ICON
 	$Label.text = GameConstants.CityNames.keys()[city_name]
-	GameManager.ports_in_play[city_name] = self
+	GameManager.register_port(self)
 	update_ui()
 
 func add_passenger(destination_city: GameConstants.CityNames):
@@ -30,10 +30,14 @@ func add_passenger(destination_city: GameConstants.CityNames):
 
 func update_ui():
 	# 1. Clear existing icons
+	$WarningSprite.visible = false
 	for child in passenger_ui.get_children():
 		child.queue_free()   
 	
 	# 2. Add a tiny TextureRect for every passenger waiting
+	if waiting_passengers.size() >= max_capacity-1:
+		$WarningSprite.visible = true
+		
 	for destination in waiting_passengers:
 		var icon = TextureRect.new()
 		icon.texture = HAND_ICON

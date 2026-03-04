@@ -2,11 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://ctjdnunknhi65" path="res://assets/sprites/icons/tile_0204.png" id="2_nb6n3"]
 [ext_resource type="Script" uid="uid://w82n77wsxjya" path="res://src/entities/port.gd" id="2_p8dw3"]
+[ext_resource type="Texture2D" uid="uid://bnpb8of34hmlm" path="res://assets/sprites/icons/tile_0182.png" id="3_nb6n3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xh4ph"]
 radius = 30.0
 
 [sub_resource type="SystemFont" id="SystemFont_p8dw3"]
+subpixel_positioning = 0
 
 [node name="Port" type="Area2D" unique_id=733375235]
 script = ExtResource("2_p8dw3")
@@ -35,3 +37,10 @@ grow_horizontal = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = SubResource("SystemFont_p8dw3")
 text = "Name"
+
+[node name="WarningSprite" type="Sprite2D" parent="." unique_id=257612419]
+visible = false
+modulate = Color(1, 0, 0, 1)
+position = Vector2(0, -52)
+scale = Vector2(2, 2)
+texture = ExtResource("3_nb6n3")
