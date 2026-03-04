@@ -15,7 +15,7 @@ var current_path_follow: PathFollow2D = null
 # Core Variables
 var direction: int = 1 # 1 = Forward (0->1), -1 = Backward (1->0)
 var current_state: TravelState = TravelState.IDLE
-var onboard_passengers: Array[Port.CityNames] = []
+var onboard_passengers: Array[GameConstants.CityNames] = []
 
 # Drag and Drop
 var is_dragging: bool = false
@@ -25,7 +25,8 @@ var drag_offset: Vector2 = Vector2.ZERO
 var arrival_cooldown: float = 0.0
 const ARRIVAL_COOLDOWN_TIME: float = 10.0
 
-@onready var passenger_ui = $PassengerContainer
+var HAND_ICON = preload("res://assets/sprites/icons/tile_0138.png")
+@onready var passenger_container = $PassengerContainer
 
 func _ready():
 	# Enable input events for this Area2D
@@ -225,9 +226,10 @@ func process_passengers(port: Port):
 		
 	# 2. IDENTIFY VALID DESTINATIONS
 	# The ferry should only pick up people whose destination exists on THIS specific line
-	var valid_destinations: Array[Port.CityNames] = []
+	var valid_destinations: Array[GameConstants.CityNames] = []
 	for p in assigned_line.ports:
 		valid_destinations.append(p.city_name)
+	print("Valid destinations on this line: ", valid_destinations)
 	
 	# 3. LOAD PASSENGERS
 	var space_left = passenger_capacity - onboard_passengers.size()
@@ -239,6 +241,7 @@ func process_passengers(port: Port):
 			break
 			
 		var passenger_dest = port.waiting_passengers[i]
+		print("Considering passenger wanting to go to ", passenger_dest)
 		
 		# Does this line actually go where they want to go?
 		if valid_destinations.has(passenger_dest):
@@ -252,5 +255,18 @@ func process_passengers(port: Port):
 	update_ui()      # Update the modulated hands on the ship
 
 func update_ui():
-	# (Logic to update the ship's PassengerContainer with City Crests, similar to port.gd)
-	pass
+	# 1. Clear existing icons
+	for child in passenger_container.get_children():
+		child.queue_free()   
+	
+	# 2. Add a tiny TextureRect for every passenger waiting
+	for destination in onboard_passengers:
+		var icon = TextureRect.new()
+		icon.texture = HAND_ICON
+		icon.custom_minimum_size = Vector2(16, 16)
+		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		
+		# MODULATE
+		icon.modulate = LinePalette.CITY_COLORS[destination]
+		
+		passenger_container.add_child(icon)

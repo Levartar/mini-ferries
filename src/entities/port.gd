@@ -1,18 +1,10 @@
 extends Area2D
 class_name Port
 
-enum CityNames {
-	TALLINN,
-	HELSINKI,
-	STOCKHOLM,
-	RIGA,
-	MARIENHAMN,
-	ROSTOCK
-}
-@export var city_name: CityNames = CityNames.TALLINN
+@export var city_name: GameConstants.CityNames = GameConstants.CityNames.TALLINN
 @export var max_capacity: int = 10
 
-var waiting_passengers: Array[String] = []
+var waiting_passengers: Array[GameConstants.CityNames] = []
 
 # Signals to alert the Game Manager
 signal overcrowded(port_node)
@@ -24,13 +16,13 @@ const PORT_ICON = preload("res://assets/sprites/icons/tile_0204.png")
 
 func _ready():
 	$Sprite2D.texture = PORT_ICON
-	$Label.text = CityNames.keys()[city_name]
+	$Label.text = GameConstants.CityNames.keys()[city_name]
 	GameManager.ports_in_play[city_name] = self
 	update_ui()
 
-func add_passenger(destination_city: String):
+func add_passenger(destination_city: GameConstants.CityNames):
 	if waiting_passengers.size() < max_capacity:
-			print("New passenger at ", CityNames.keys()[city_name], " wants to go to ", destination_city)
+			print("New passenger at ", GameConstants.CityNames.keys()[city_name], " wants to go to ", GameConstants.CityNames.keys()[destination_city])
 			waiting_passengers.append(destination_city)
 	else:
 		overcrowded.emit(self)
@@ -46,8 +38,7 @@ func update_ui():
 		var icon = TextureRect.new()
 		icon.texture = HAND_ICON
 		icon.custom_minimum_size = Vector2(16, 16)
-		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		
+	
 		# MODULATE: This is the magic part
 		icon.modulate = LinePalette.CITY_COLORS[destination]
 		
