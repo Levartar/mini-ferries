@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://xxj4c0h80hn1"]
+
+[ext_resource type="Texture2D" uid="uid://bhsha46ndunwi" path="res://assets/Ships/megastar.png" id="1_ti7o3"]
+
+[node name="Megastar" type="Node2D" unique_id=909522981]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1798969410]
+texture = ExtResource("1_ti7o3")

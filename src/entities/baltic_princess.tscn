@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bhdxbao1v8o37"]
+
+[ext_resource type="Texture2D" uid="uid://dsss5eanl4ruf" path="res://assets/Ships/baltic_princess.png" id="1_pyrhv"]
+
+[node name="Baltic Princess" type="Node2D" unique_id=1829402425]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=435815744]
+texture = ExtResource("1_pyrhv")

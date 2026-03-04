@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bbwmcvsbd2qgk"]
+
+[ext_resource type="Texture2D" uid="uid://b5owcw4c06piu" path="res://assets/Ships/baltic_queen.png" id="1_fx5vy"]
+
+[node name="Baltic Queen" type="Node2D" unique_id=1718553730]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=229873601]
+texture = ExtResource("1_fx5vy")
