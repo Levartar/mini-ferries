@@ -7,5 +7,6 @@ enum CityNames {
 	RIGA,
 	TURKU,
 	MARIENHAMN,
-	ROSTOCK
+	ROSTOCK,
+	VISBY
 }

@@ -2,7 +2,9 @@
 extends Area2D
 class_name Ship
 
-enum ShipNames {QUEEN, PRINCESS, MEGASTAR}
+enum ShipNames {
+	QUEEN, PRINCESS, MEGASTAR, MYSTAR, VICTORIAI, SERENADE, SYMPHONY, SUPERFAST
+	}
 
 @export var ship_name: ShipNames:
 	set(value):
@@ -29,8 +31,27 @@ func _update_info():
 		ShipNames.MEGASTAR:
 			$Sprite2D.texture = preload("res://assets/Ships/megastar.png")
 			$Label.text = "Megastar"
+			max_ports = 2
+		ShipNames.MYSTAR:
+			$Sprite2D.texture = preload("res://assets/Ships/mystar.png")
+			$Label.text = "My Star"
+			max_ports = 2
+		ShipNames.VICTORIAI:
+			$Sprite2D.texture = preload("res://assets/Ships/victoriaI.png")
+			$Label.text = "Victoria I"
+			max_ports = 2
+		ShipNames.SERENADE:
+			$Sprite2D.texture = preload("res://assets/Ships/serenade.png")
+			$Label.text = "Serenade"
+			max_ports = 3
+		ShipNames.SYMPHONY:
+			$Sprite2D.texture = preload("res://assets/Ships/symphony.png")
+			$Label.text = "Symphony"
+			max_ports = 3
+		ShipNames.SUPERFAST:
+			$Sprite2D.texture = preload("res://assets/Ships/superfast.png")
+			$Label.text = "Superfast IX"
 			max_ports = 2 
-	notify_property_list_changed()
 
 # ENi note: Gemini says that this makes the variable grayed out/read-only in the UI
 # This is the "Magic" function for Godot 4 stable

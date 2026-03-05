@@ -50,3 +50,4 @@ position = Vector2(140, 215)
 
 [node name="Ship" parent="." unique_id=1514026530 instance=ExtResource("7_45v6v")]
 position = Vector2(4, 43)
+max_ports = 3
