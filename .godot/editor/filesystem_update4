@@ -1,0 +1,15 @@
+res://src/levels/test_level.tscn
+res://src/levels/test_ports.tscn
+res://src/entities/port.gd
+res://src/scripts/game_manager.gd
+res://src/entities/Port.tscn
+res://src/entities/ferry/Ferry.tscn
+res://src/entities/ferry/ferry.gd
+res://src/scripts/line-manager/LineManager.tscn
+res://src/scripts/line-manager/line_manager.gd
+res://src/scripts/ferry-line/LineHandle.tscn
+res://src/scripts/ferry-line/line_handle.gd
+res://src/scripts/ferry-line/ferry_line.gd
+res://src/scripts/ferry-line/FerryLine.tscn
+res://src/ui/ScoreUi.tscn
+res://src/ui/score_ui.gd

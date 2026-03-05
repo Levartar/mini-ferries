@@ -58,7 +58,7 @@ func _process(_delta):
 		else:
 			# Fallback: draw straight red line if no water path exists
 			temp_line.points = [last_port_pos, mouse_pos]
-			temp_line.default_color = Color.RED
+			temp_line.default_color = active_line.line_color
 
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
