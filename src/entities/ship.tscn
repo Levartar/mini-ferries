@@ -1,20 +1,24 @@
 [gd_scene format=3 uid="uid://drireq533lsg5"]
 
-[ext_resource type="Texture2D" uid="uid://dsss5eanl4ruf" path="res://assets/Ships/baltic_princess.png" id="1_7p538"]
-[ext_resource type="Texture2D" uid="uid://b5owcw4c06piu" path="res://assets/Ships/baltic_queen.png" id="2_pcbd8"]
-[ext_resource type="Texture2D" uid="uid://bhsha46ndunwi" path="res://assets/Ships/megastar.png" id="3_a3alk"]
+[ext_resource type="Script" uid="uid://dvkt8pqog864o" path="res://src/scripts/ship.gd" id="1_s7fcy"]
+[ext_resource type="Texture2D" uid="uid://ctjdnunknhi65" path="res://assets/sprites/icons/tile_0204.png" id="2_rqhp2"]
 
-[node name="Ship" type="Node2D" unique_id=1174602753]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7p538"]
+
+[node name="Ship" type="Area2D" unique_id=1514026530]
+script = ExtResource("1_s7fcy")
 metadata/Type = 0
 
-[node name="Baltic_princess" type="Sprite2D" parent="." unique_id=882006558]
-process_mode = 4
-texture = ExtResource("1_7p538")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1198214359]
+texture = ExtResource("2_rqhp2")
 
-[node name="Baltic_queen" type="Sprite2D" parent="." unique_id=461070183]
-process_mode = 4
-texture = ExtResource("2_pcbd8")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1735838917]
+shape = SubResource("RectangleShape2D_7p538")
 
-[node name="Megastar" type="Sprite2D" parent="." unique_id=1524878670]
-process_mode = 4
-texture = ExtResource("3_a3alk")
+[node name="Label" type="Label" parent="." unique_id=17742680]
+modulate = Color(1, 1, 0, 1)
+offset_left = -95.0
+offset_top = 41.0
+offset_right = -48.0
+offset_bottom = 64.0
+text = "Name"

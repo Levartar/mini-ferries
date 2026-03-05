@@ -9,3 +9,14 @@ enum CityNames {
 	MARIENHAMN,
 	ROSTOCK
 }
+
+enum ShipTypes {
+	TWO,
+	THREE
+	}
+	
+enum ShipNames {
+	QUEEN,
+	PRINCESS,
+	MEGASTAR
+	}

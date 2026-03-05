@@ -5,15 +5,19 @@
 [ext_resource type="PackedScene" uid="uid://c4ykmsfcg5c4f" path="res://src/entities/Land.tscn" id="3_7hvae"]
 [ext_resource type="PackedScene" uid="uid://b1x38aye2hryc" path="res://src/entities/Port.tscn" id="4_br53r"]
 [ext_resource type="PackedScene" uid="uid://q5dnrey14wfx" path="res://src/entities/ferry/Ferry.tscn" id="6_45v6v"]
+[ext_resource type="PackedScene" uid="uid://drireq533lsg5" path="res://src/entities/ship.tscn" id="7_45v6v"]
 [ext_resource type="PackedScene" uid="uid://d2pc4x03jiacl" path="res://src/scripts/line-manager/LineManager.tscn" id="7_q3sum"]
 
 [node name="Test_level" type="Node2D" unique_id=234209174]
 
 [node name="Land" parent="." unique_id=193335558 instance=ExtResource("3_7hvae")]
+visible = false
 
 [node name="Map Marks" parent="." unique_id=830546108 instance=ExtResource("2_br53r")]
+visible = false
 
 [node name="Sea" parent="." unique_id=2138396762 instance=ExtResource("1_hdcac")]
+visible = false
 
 [node name="Tallinn" parent="." unique_id=733375235 instance=ExtResource("4_br53r")]
 position = Vector2(451, 102)
@@ -41,4 +45,8 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(660, 554)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=674862777]
+visible = false
 position = Vector2(140, 215)
+
+[node name="Ship" parent="." unique_id=1514026530 instance=ExtResource("7_45v6v")]
+position = Vector2(4, 43)
