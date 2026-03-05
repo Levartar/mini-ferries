@@ -1,2 +1,2 @@
 res://src/levels/test_level.tscn
-res://src/scripts/game_constants.gd
+res://src/scripts/ship.gd

@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1772734686
+::res://::1772736121
 export_presets.cfg::TextFile::-1::1772376718::0::1::::<><><>0<>0<><>::
 First Push Test.txt::TextFile::-1::1772373690::0::1::::<><><>0<>0<><>::
 ::res://assets/::1772731341
@@ -54,15 +54,15 @@ ship.tscn::PackedScene::8370027635038778826::1772734478::0::1::::<><><>0<>0<><>:
 ::res://src/entities/ferry/::1772725614
 ferry.gd::GDScript::163409940190194760::1772725614::0::1::::Ferry<>Area2D<><>0<>0<><>::
 Ferry.tscn::PackedScene::1185159097331904929::1772725614::0::1::::<><><>0<>0<><>::uid://clflqsqlx4oq::::res://src/entities/ferry/ferry.gd<>uid://khcjw47dfhql::::res://assets/sprites/icons/tracking_horizontal_up.png
-::res://src/levels/::1772734541
+::res://src/levels/::1772736055
 test.tscn::PackedScene::1615197628873231540::1772376718::0::1::::<><><>0<>0<><>::uid://memtt5lum103::::res://assets/icon.svg
-test_level.tscn::PackedScene::4586315834630275214::1772734541::0::1::::<><><>0<>0<><>::uid://dl1cvcmg6ywou::::res://src/entities/Sea.tscn<>uid://bau5uljm6x5t3::::res://src/entities/Map_marks.tscn<>uid://c4ykmsfcg5c4f::::res://src/entities/Land.tscn<>uid://b1x38aye2hryc::::res://src/entities/Port.tscn<>uid://q5dnrey14wfx::::res://src/entities/ferry/Ferry.tscn<>uid://drireq533lsg5::::res://src/entities/ship.tscn<>uid://d2pc4x03jiacl::::res://src/scripts/line-manager/LineManager.tscn
+test_level.tscn::PackedScene::4586315834630275214::1772736055::0::1::::<><><>0<>0<><>::uid://dl1cvcmg6ywou::::res://src/entities/Sea.tscn<>uid://bau5uljm6x5t3::::res://src/entities/Map_marks.tscn<>uid://c4ykmsfcg5c4f::::res://src/entities/Land.tscn<>uid://b1x38aye2hryc::::res://src/entities/Port.tscn<>uid://q5dnrey14wfx::::res://src/entities/ferry/Ferry.tscn<>uid://drireq533lsg5::::res://src/entities/ship.tscn<>uid://d2pc4x03jiacl::::res://src/scripts/line-manager/LineManager.tscn
 test_ports.tscn::PackedScene::994235350172646984::1772725614::0::1::::<><><>0<>0<><>::uid://d2pc4x03jiacl::::res://src/scripts/line-manager/LineManager.tscn<>uid://b1x38aye2hryc::::res://src/entities/Port.tscn<>uid://q5dnrey14wfx::::res://src/entities/ferry/Ferry.tscn<>uid://cxyk465q78udg::::res://src/ui/ScoreUi.tscn
-::res://src/scripts/::1772734082
-game_constants.gd::GDScript::8870958009738136716::1772732197::0::1::::<>Node<><>0<>0<><>::
+::res://src/scripts/::1772736043
+game_constants.gd::GDScript::8870958009738136716::1772734708::0::1::::<>Node<><>0<>0<><>::
 game_manager.gd::GDScript::6593403670810841586::1772725614::0::1::::<>Node<><>0<>0<><>::
 game_signals.gd::GDScript::3349128834264590663::1772619733::0::1::::<>Node<><>0<>0<><>::
-ship.gd::GDScript::8655084912292576012::1772734082::0::1::::Ship<>Area2D<><>0<>0<><>::
+ship.gd::GDScript::8655084912292576012::1772736043::0::1::::Ship<>Area2D<><>0<>0<><>::
 ::res://src/scripts/ferry-line/::1772725614
 FerryLine.tscn::PackedScene::6897036685488647905::1772725614::0::1::::<><><>0<>0<><>::uid://chv0tsmwqgboo::::res://src/scripts/ferry-line/ferry_line.gd
 ferry_line.gd::GDScript::5309068025570192478::1772725614::0::1::::FerryLine<>Node2D<><>0<>0<><>::
