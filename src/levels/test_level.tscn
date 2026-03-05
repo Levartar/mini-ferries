@@ -11,13 +11,10 @@
 [node name="Test_level" type="Node2D" unique_id=234209174]
 
 [node name="Land" parent="." unique_id=193335558 instance=ExtResource("3_7hvae")]
-visible = false
 
 [node name="Map Marks" parent="." unique_id=830546108 instance=ExtResource("2_br53r")]
-visible = false
 
 [node name="Sea" parent="." unique_id=2138396762 instance=ExtResource("1_hdcac")]
-visible = false
 
 [node name="Tallinn" parent="." unique_id=733375235 instance=ExtResource("4_br53r")]
 position = Vector2(451, 102)
@@ -50,4 +47,6 @@ position = Vector2(140, 215)
 
 [node name="Ship" parent="." unique_id=1514026530 instance=ExtResource("7_45v6v")]
 position = Vector2(4, 43)
-max_ports = 3
+speed = 0.024
+capacity = 6
+docking_time = 2.0
