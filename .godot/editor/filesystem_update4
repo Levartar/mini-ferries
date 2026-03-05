@@ -1,3 +1,5 @@
 res://src/levels/test_level.tscn
 res://src/scripts/ship.gd
 res://src/entities/ship.tscn
+res://src/scripts/ship_movement.gd
+res://src/scripts/ship_container.gd

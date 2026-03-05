@@ -29,6 +29,9 @@ var current_state: TravelState = TravelState.IDLE
 var onboard_passengers: Array[GameConstants.CityNames] = []
 
 #ENi Note: ferry script's drag and drop logic doesn't seem fitting
+var assigned_ports: Array[Vector2] = []
+var target_index: int = 0
+signal ship_selected(ship_node)
 
 #ENi Note: Arrival cooldown in ferry script
 var arrival_cooldown: float = 0.0
@@ -110,6 +113,19 @@ func _validate_property(property: Dictionary):
 	if property.name == "docking_time":
 		property.usage = PROPERTY_USAGE_DEFAULT | PROPERTY_USAGE_READ_ONLY
 
+func _input_event(_viewport, event, _shape_idx):
+	if event is InputEventMouseButton and event.pressed:
+		ship_selected.emit(self)
+		
+func _physics_process(_delta):	
+	var current_target = assigned_ports[target_index]
+	
+	# Movement logic
+	var ship_direction = global_position.direction_to(current_target)
+	global_position += ship_direction * speed * _delta
+	if global_position.distance_to(current_target) < 5:
+		if assigned_ports.size() > 1:
+			target_index = (target_index + 1) % assigned_ports.size()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta: float) -> void:
 #	pass
