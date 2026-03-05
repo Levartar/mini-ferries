@@ -37,8 +37,14 @@ func _handle_ports(pos: Vector2):
 	selected_ship.assigned_ports.append(pos)
 	
 	_draw_ship_path(selected_ship)
-	
+		
 	if selected_ship.assigned_ports.size() == selected_ship.max_ports:
+		# Teleport ant to the first food source so it doesn't walk from (0,0)
+		selected_ship.global_position = selected_ship.assigned_ports[0]
+		
+		# Show the ant and start its movement
+		selected_ship.show()
+		selected_ship.set_process(true)
 		selected_ship = null
 	
 func _draw_ship_path(ship: Ship):

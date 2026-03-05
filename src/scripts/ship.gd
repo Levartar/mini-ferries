@@ -40,6 +40,8 @@ const ARRIVAL_COOLDOWN_TIME: float = 5.0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	_update_info()
+	hide()
+	set_process(false)
 
 func _update_info():
 	match ship_name:
@@ -118,6 +120,9 @@ func _input_event(_viewport, event, _shape_idx):
 		ship_selected.emit(self)
 		
 func _physics_process(_delta):	
+	if assigned_ports.is_empty():
+		return
+	
 	var current_target = assigned_ports[target_index]
 	
 	# Movement logic
