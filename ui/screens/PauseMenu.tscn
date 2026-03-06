@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://3ek8qafpfkpn"]
+
+[ext_resource type="Theme" uid="uid://r2ncmep2vomx" path="res://ui/theme.tres" id="1"]
+[ext_resource type="Script" uid="uid://enpqu6jfn2x5" path="res://ui/screens/PauseMenu.gd" id="2"]
+
+[node name="PauseMenu" type="Control" unique_id=1707726139]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1")
+script = ExtResource("2")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1148533126]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1222720071]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=537092715]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1549987583]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "Game Paused"
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1138772609]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Resume"
+
+[node name="Spacer2" type="Control" parent="CenterContainer/VBoxContainer" unique_id=1968230463]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="MainMenuButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=199330795]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Main Menu"

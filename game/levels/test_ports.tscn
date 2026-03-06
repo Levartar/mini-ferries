@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://ofu58cjvg7iy"]
+
+[ext_resource type="PackedScene" uid="uid://d2pc4x03jiacl" path="res://game/scripts/line-manager/LineManager.tscn" id="1_crpo1"]
+[ext_resource type="PackedScene" uid="uid://b1x38aye2hryc" path="res://game/entities/Port.tscn" id="1_d3unv"]
+[ext_resource type="PackedScene" uid="uid://q5dnrey14wfx" path="res://game/entities/ferry/Ferry.tscn" id="2_jxqds"]
+[ext_resource type="PackedScene" uid="uid://cxyk465q78udg" path="res://ui/ScoreUi.tscn" id="4_pidaj"]
+
+[node name="TestPorts" type="Node2D" unique_id=1757097284]
+
+[node name="LineManager" parent="." unique_id=1811220622 instance=ExtResource("1_crpo1")]
+
+[node name="Port" parent="." unique_id=1491698354 instance=ExtResource("1_d3unv")]
+position = Vector2(893, 231)
+city_name = 1
+appear_after_seconds = 2.0
+
+[node name="Port2" parent="." unique_id=1938865386 instance=ExtResource("1_d3unv")]
+position = Vector2(533, 224)
+city_name = 2
+appear_after_seconds = 10.0
+
+[node name="Port3" parent="." unique_id=733375235 instance=ExtResource("1_d3unv")]
+position = Vector2(898, 453)
+
+[node name="Port4" parent="." unique_id=2143156552 instance=ExtResource("1_d3unv")]
+position = Vector2(154, 545)
+city_name = 5
+appear_after_seconds = 60.0
+
+[node name="Ferry" parent="." unique_id=1559693109 instance=ExtResource("2_jxqds")]
+position = Vector2(236, 226)
+
+[node name="Ferry2" parent="." unique_id=1037342684 instance=ExtResource("2_jxqds")]
+position = Vector2(236, 131)
+
+[node name="ScoreUi" parent="." unique_id=1289090932 instance=ExtResource("4_pidaj")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 69.0
+offset_bottom = 64.0
+grow_horizontal = 1
+grow_vertical = 1

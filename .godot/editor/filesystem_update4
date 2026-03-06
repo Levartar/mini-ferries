@@ -1,8 +1,7 @@
-res://src/entities/ferry/ferry.gd
-res://src/levels/test_ports.tscn
-res://src/scripts/ferry-line/FerryLine.tscn
-res://src/scripts/ferry-line/LineHandle.tscn
-res://src/scripts/ferry-line/line_handle.gd
-res://src/entities/port.gd
-res://src/scripts/line-manager/LineManager.tscn
-res://src/ui/line_palette.gd
+res://i18n/strings.en.translation
+res://i18n/strings.es.translation
+res://i18n/strings.fr.translation
+res://i18n/strings.de.translation
+res://i18n/strings.nl.translation
+res://game/levels/test_ports.tscn
+res://game/entities/port.gd

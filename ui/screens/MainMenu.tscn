@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://ig7m6xnjoimf"]
+
+[ext_resource type="Theme" uid="uid://r2ncmep2vomx" path="res://ui/theme.tres" id="1"]
+[ext_resource type="Script" uid="uid://bphuhi5kxdw0w" path="res://ui/screens/MainMenu.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://busvghd82mbgj" path="res://ui/screens/Screenshot 2026-03-06 at 12-32-55 Explore Color Palettes - Coolors.png" id="3_fx4rh"]
+[ext_resource type="Texture2D" uid="uid://dnrdu05q2fnyh" path="res://game/assets/Ships/serenade.png" id="4_85l58"]
+
+[node name="MainMenu" type="Control" unique_id=252007704]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1")
+script = ExtResource("2")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=664015978]
+layout_mode = 0
+offset_left = -465.0
+offset_top = -173.0
+offset_right = 2385.0
+offset_bottom = 1253.0
+texture = ExtResource("3_fx4rh")
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect" unique_id=1788256879]
+layout_mode = 0
+offset_left = 1605.0
+offset_top = 713.0
+offset_right = 1900.0
+offset_bottom = 876.0
+texture = ExtResource("4_85l58")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1890082665]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CenterContainer" unique_id=566939664]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 2
+color = Color(0.023529412, 0.023529412, 0.023529412, 0.40392157)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=868771231]
+layout_mode = 2
+alignment = 1
+
+[node name="GameTitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=160496606]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Mini-Ferries"
+horizontal_alignment = 1
+
+[node name="MenuButtons" type="VBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1639659684]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer/MenuButtons" unique_id=42818008]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Play"
+
+[node name="Spacer2" type="Control" parent="CenterContainer/VBoxContainer/MenuButtons" unique_id=981070559]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="SettingsButton" type="Button" parent="CenterContainer/VBoxContainer/MenuButtons" unique_id=855972948]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Settings"
+
+[node name="Spacer3" type="Control" parent="CenterContainer/VBoxContainer/MenuButtons" unique_id=887360204]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="CreditsButton" type="Button" parent="CenterContainer/VBoxContainer/MenuButtons" unique_id=789913690]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Credits"
+
+[node name="Spacer4" type="Control" parent="CenterContainer/VBoxContainer/MenuButtons" unique_id=1044842735]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="ExitButton" type="Button" parent="CenterContainer/VBoxContainer/MenuButtons" unique_id=2112520080]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Exit"
