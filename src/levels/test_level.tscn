@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://q5dnrey14wfx" path="res://src/entities/ferry/Ferry.tscn" id="6_45v6v"]
 [ext_resource type="PackedScene" uid="uid://drireq533lsg5" path="res://src/entities/ship.tscn" id="7_45v6v"]
 [ext_resource type="PackedScene" uid="uid://d2pc4x03jiacl" path="res://src/scripts/line-manager/LineManager.tscn" id="7_q3sum"]
+[ext_resource type="Script" uid="uid://dsp0bugr0j1dp" path="res://src/scripts/camera_2d.gd" id="8_b7rnw"]
 [ext_resource type="Script" uid="uid://y5cms1bnff3c" path="res://src/scripts/ship_container.gd" id="9_202rx"]
 
 [node name="Test_level" type="Node2D" unique_id=234209174]
@@ -45,8 +46,8 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(660, 554)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=674862777]
-visible = false
 position = Vector2(140, 215)
+script = ExtResource("8_b7rnw")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1060464001]
 
@@ -84,12 +85,14 @@ layout_mode = 2
 [node name="Ships" type="Node2D" parent="." unique_id=251672362]
 
 [node name="Ship1" parent="Ships" unique_id=1514026530 instance=ExtResource("7_45v6v")]
+visible = false
 position = Vector2(4, 43)
 speed = 0.024
 capacity = 6
 docking_time = 2.0
 
 [node name="Ship2" parent="Ships" unique_id=1125281680 instance=ExtResource("7_45v6v")]
+visible = false
 position = Vector2(4, 43)
 ship_name = 1
 speed = 0.024
@@ -97,6 +100,7 @@ capacity = 6
 docking_time = 2.0
 
 [node name="Ship3" parent="Ships" unique_id=963162096 instance=ExtResource("7_45v6v")]
+visible = false
 position = Vector2(4, 43)
 ship_name = 2
 max_ports = 2
@@ -105,6 +109,7 @@ capacity = 6
 docking_time = 2.0
 
 [node name="Ship4" parent="Ships" unique_id=81530324 instance=ExtResource("7_45v6v")]
+visible = false
 position = Vector2(4, 43)
 ship_name = 4
 max_ports = 2
@@ -113,6 +118,7 @@ capacity = 5
 docking_time = 2.0
 
 [node name="Ship5" parent="Ships" unique_id=542278985 instance=ExtResource("7_45v6v")]
+visible = false
 position = Vector2(4, 43)
 ship_name = 5
 speed = 0.021
@@ -120,6 +126,7 @@ capacity = 6
 docking_time = 2.0
 
 [node name="Ship6" parent="Ships" unique_id=469818215 instance=ExtResource("7_45v6v")]
+visible = false
 position = Vector2(4, 43)
 ship_name = 5
 speed = 0.021
@@ -127,6 +134,7 @@ capacity = 6
 docking_time = 2.0
 
 [node name="Ship7" parent="Ships" unique_id=1901511322 instance=ExtResource("7_45v6v")]
+visible = false
 position = Vector2(4, 43)
 ship_name = 6
 speed = 0.021
@@ -134,6 +142,7 @@ capacity = 7
 docking_time = 2.0
 
 [node name="Ship8" parent="Ships" unique_id=1691145480 instance=ExtResource("7_45v6v")]
+visible = false
 position = Vector2(4, 43)
 ship_name = 7
 max_ports = 2
