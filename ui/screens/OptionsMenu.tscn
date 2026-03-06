@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://dogghbexs2y5o"]
+
+[ext_resource type="Theme" uid="uid://r2ncmep2vomx" path="res://ui/theme.tres" id="1"]
+[ext_resource type="Script" uid="uid://ewbuhdsouqch" path="res://ui/screens/OptionsMenu.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://busvghd82mbgj" path="res://ui/screens/Screenshot 2026-03-06 at 12-32-55 Explore Color Palettes - Coolors.png" id="3_nfbsu"]
+
+[node name="OptionsMenu" type="Control" unique_id=1265852080]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1")
+script = ExtResource("2")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2017083073]
+layout_mode = 0
+offset_left = -465.0
+offset_top = -173.0
+offset_right = 2385.0
+offset_bottom = 1253.0
+texture = ExtResource("3_nfbsu")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=468123437]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CenterContainer" unique_id=1277082515]
+custom_minimum_size = Vector2(400, 500)
+layout_mode = 2
+color = Color(0.023529412, 0.023529412, 0.023529412, 0.40392157)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=415878034]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="CenterContainer/VBoxContainer" unique_id=703119213]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="OptionsButtons" type="VBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=809676494]
+layout_mode = 2
+alignment = 1
+
+[node name="AudioButton" type="Button" parent="CenterContainer/VBoxContainer/OptionsButtons" unique_id=1008094851]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+disabled = true
+text = "Audio"
+
+[node name="Spacer2" type="Control" parent="CenterContainer/VBoxContainer/OptionsButtons" unique_id=1084441300]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="VideoButton" type="Button" parent="CenterContainer/VBoxContainer/OptionsButtons" unique_id=614587015]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Video"
+
+[node name="Spacer3" type="Control" parent="CenterContainer/VBoxContainer/OptionsButtons" unique_id=1695120923]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="ControlsButton" type="Button" parent="CenterContainer/VBoxContainer/OptionsButtons" unique_id=2041525562]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+disabled = true
+text = "Controls"
+
+[node name="Spacer4" type="Control" parent="CenterContainer/VBoxContainer" unique_id=1962859314]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="LanguageRow" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1963528496]
+layout_mode = 2
+alignment = 1
+
+[node name="LanguageLabel" type="Label" parent="CenterContainer/VBoxContainer/LanguageRow" unique_id=621694295]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Language:"
+
+[node name="LanguageOption" type="OptionButton" parent="CenterContainer/VBoxContainer/LanguageRow" unique_id=1859385724]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+disabled = true
+
+[node name="Spacer5" type="Control" parent="CenterContainer/VBoxContainer" unique_id=472818785]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=2090461235]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Back"

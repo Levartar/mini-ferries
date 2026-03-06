@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 res://src/levels/test_level.tscn
 res://src/scripts/camera_2d.gd
 res://src/entities/Land.tscn
@@ -12,3 +13,12 @@ res://src/entities/port.gd
 res://src/scripts/line-manager/LineManager.tscn
 res://src/ui/line_palette.gd
 >>>>>>> main
+=======
+res://i18n/strings.en.translation
+res://i18n/strings.es.translation
+res://i18n/strings.fr.translation
+res://i18n/strings.de.translation
+res://i18n/strings.nl.translation
+res://game/levels/test_ports.tscn
+res://game/entities/port.gd
+>>>>>>> origin/shipping/menu

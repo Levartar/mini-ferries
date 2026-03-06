@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://dynvyjm1u6ea0"]
+
+[ext_resource type="Theme" uid="uid://r2ncmep2vomx" path="res://ui/theme.tres" id="1"]
+[ext_resource type="Script" uid="uid://cdruvgyuhdmju" path="res://ui/screens/PlayGame.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://busvghd82mbgj" path="res://ui/screens/Screenshot 2026-03-06 at 12-32-55 Explore Color Palettes - Coolors.png" id="3_4ob1s"]
+
+[node name="PlayGame" type="Control" unique_id=1452768455]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1")
+script = ExtResource("2")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1559356061]
+layout_mode = 0
+offset_left = -465.0
+offset_top = -173.0
+offset_right = 2385.0
+offset_bottom = 1253.0
+texture = ExtResource("3_4ob1s")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=269548821]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CenterContainer" unique_id=2028400086]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 2
+color = Color(0.023529412, 0.023529412, 0.023529412, 0.40392157)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=330983042]
+layout_mode = 2
+alignment = 1
+
+[node name="GameTitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=694520714]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Play Game"
+horizontal_alignment = 1
+
+[node name="GameButtons" type="VBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1316265077]
+layout_mode = 2
+alignment = 1
+
+[node name="NewGameButton" type="Button" parent="CenterContainer/VBoxContainer/GameButtons" unique_id=1737402037]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+text = "New Game"
+
+[node name="Spacer2" type="Control" parent="CenterContainer/VBoxContainer/GameButtons" unique_id=78928270]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="ContinueButton" type="Button" parent="CenterContainer/VBoxContainer/GameButtons" unique_id=1814945957]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+disabled = true
+text = "Continue"
+
+[node name="Spacer3" type="Control" parent="CenterContainer/VBoxContainer/GameButtons" unique_id=133250790]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="LevelSelectButton" type="Button" parent="CenterContainer/VBoxContainer/GameButtons" unique_id=1336915311]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+disabled = true
+text = "Level Select"
+
+[node name="Spacer4" type="Control" parent="CenterContainer/VBoxContainer" unique_id=340229559]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=140895898]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Back"

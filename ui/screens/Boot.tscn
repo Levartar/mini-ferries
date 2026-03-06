@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://ds04hcnrq3ld6"]
+
+[ext_resource type="Script" uid="uid://djgjl7eiq3an5" path="res://ui/screens/Boot.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://busvghd82mbgj" path="res://ui/screens/Screenshot 2026-03-06 at 12-32-55 Explore Color Palettes - Coolors.png" id="2_sc6q1"]
+
+[node name="Boot" type="Control" unique_id=853938847]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1591382871]
+layout_mode = 0
+offset_left = -465.0
+offset_top = -173.0
+offset_right = 2385.0
+offset_bottom = 1253.0
+texture = ExtResource("2_sc6q1")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=471312434]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CenterContainer" unique_id=1762476478]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 2
+color = Color(0.023529412, 0.023529412, 0.023529412, 0.40392157)
+
+[node name="Label" type="Label" parent="CenterContainer" unique_id=2129411087]
+layout_mode = 2
+text = "Loading..."
+horizontal_alignment = 1

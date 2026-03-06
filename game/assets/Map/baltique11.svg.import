@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bvc31pbprytel"
+path="res://.godot/imported/baltique11.svg-c1ba38e22342057add009fcd04cbfdda.res"
+
+[deps]
+
+source_file="res://game/assets/Map/baltique11.svg"
+dest_files=["res://.godot/imported/baltique11.svg-c1ba38e22342057add009fcd04cbfdda.res"]
+
+[params]
+
+create_from=1
+threshold=0.5
