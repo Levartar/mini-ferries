@@ -21,13 +21,13 @@ const COLORS = [
 
 # City Identity Data
 const CITY_COLORS = {
-	GameConstants.CityNames.TALLINN: Color("e6194b"),   # Red
-	GameConstants.CityNames.HELSINKI: Color("3cb44b"),  # Green
-	GameConstants.CityNames.STOCKHOLM: Color("ffe119"), # Yellow
-	GameConstants.CityNames.RIGA: Color("4363d8"),      # Blue
-	GameConstants.CityNames.TURKU: Color("f58231"),     # Orange
-	GameConstants.CityNames.MARIENHAMN: Color("911eb4"), # Purple
-	GameConstants.CityNames.ROSTOCK: Color("42d4f4")    # Cyan
+	GameConstants.CityNames.TALLINN: Color("457b9d"),   # Red
+	GameConstants.CityNames.HELSINKI: Color("a8dadc"),  # Green
+	GameConstants.CityNames.STOCKHOLM: Color("ffb703"), # Yellow
+	GameConstants.CityNames.RIGA: Color("e63946"),      # Blue
+	GameConstants.CityNames.TURKU: Color("f1faee"),     # Orange
+	GameConstants.CityNames.MARIENHAMN: Color("1d3557"), # Purple
+	GameConstants.CityNames.ROSTOCK: Color("02c39a")    # Cyan
 }
 
 static var current_index = 0

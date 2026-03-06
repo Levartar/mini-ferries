@@ -12,10 +12,12 @@
 [node name="Port" parent="." unique_id=1491698354 instance=ExtResource("1_d3unv")]
 position = Vector2(893, 231)
 city_name = 1
+appear_after_seconds = 2.0
 
 [node name="Port2" parent="." unique_id=1938865386 instance=ExtResource("1_d3unv")]
 position = Vector2(533, 224)
 city_name = 2
+appear_after_seconds = 10.0
 
 [node name="Port3" parent="." unique_id=733375235 instance=ExtResource("1_d3unv")]
 position = Vector2(898, 453)
@@ -23,6 +25,7 @@ position = Vector2(898, 453)
 [node name="Port4" parent="." unique_id=2143156552 instance=ExtResource("1_d3unv")]
 position = Vector2(154, 545)
 city_name = 5
+appear_after_seconds = 60.0
 
 [node name="Ferry" parent="." unique_id=1559693109 instance=ExtResource("2_jxqds")]
 position = Vector2(236, 226)

@@ -38,7 +38,7 @@ func _ready():
 
 func _on_mouse_entered():
 	# Visual feedback when hovering (optional)
-	modulate = Color(1.2, 1.2, 1.2)
+	modulate = Color(1.338, 0.801, 1.5, 1.0)
 
 func _on_mouse_exited():
 	if not is_dragging:
@@ -49,9 +49,11 @@ func _input(event):
 		if event.pressed and _is_mouse_over():
 			# Start dragging
 			start_drag(event.position)
+			get_viewport().set_input_as_handled()
 		elif not event.pressed and is_dragging:
 			# Stop dragging and check for path
 			stop_drag()
+			
 
 func _is_mouse_over() -> bool:
 	# Check if mouse is over this ferry
@@ -67,17 +69,32 @@ func _is_mouse_over() -> bool:
 
 func start_drag(mouse_pos: Vector2):
 	is_dragging = true
-	drag_offset = global_position - mouse_pos
-	current_state = TravelState.IDLE
 	
 	# Detach from current path if following one
 	if current_path_follow:
-		var old_pos = global_position
+		print("Detaching from path: ", assigned_line.name)
+		
+		# Store the global position BEFORE reparenting
+		var old_global_pos = global_position
+		
+		# Reparent back to the main scene
+		var main_scene = get_tree().root.get_child(0) # Or get_tree().current_scene
+		get_parent().remove_child(self)
+		main_scene.add_child(self)
+		
+		# Restore global position after reparenting
+		global_position = old_global_pos
+		
+		# Clean up the PathFollow2D
 		current_path_follow.queue_free()
 		current_path_follow = null
-		global_position = old_pos
 	
-	modulate = Color(1.5, 1.5, 1.5)
+	# NOW calculate drag offset with correct global position
+	drag_offset = global_position - mouse_pos
+	print("Starting drag, detaching from path if attached", drag_offset)
+	
+	current_state = TravelState.IDLE
+	modulate = Color(1.338, 0.801, 1.5, 1.0)
 
 func stop_drag():
 	is_dragging = false
@@ -157,7 +174,7 @@ func _process(delta):
 	if arrival_cooldown > 0:
 		arrival_cooldown -= delta
 	
-	if current_state == TravelState.SAILING:
+	if current_state == TravelState.SAILING and current_path_follow:
 		# 1. Update movement
 		current_path_follow.progress_ratio += (sail_speed * delta * direction)
 		

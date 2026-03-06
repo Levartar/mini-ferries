@@ -3,6 +3,7 @@ class_name Port
 
 @export var city_name: GameConstants.CityNames = GameConstants.CityNames.TALLINN
 @export var max_capacity: int = 10
+@export var appear_after_seconds: float = 0.0
 
 var waiting_passengers: Array[GameConstants.CityNames] = []
 
@@ -17,6 +18,24 @@ const PORT_ICON = preload("res://assets/sprites/icons/tracking_horizontal.png")
 func _ready():
 	$Sprite2D.texture = PORT_ICON
 	$Label.text = GameConstants.CityNames.keys()[city_name]
+	
+	# Start invisible if there's a delay
+	if appear_after_seconds > 0:
+		visible = false
+		input_pickable = false
+		await get_tree().create_timer(appear_after_seconds).timeout
+		activate_port()
+	else:
+		activate_port()
+
+func activate_port():
+	visible = true
+	input_pickable = true
+	
+	# Set port color based on city (softer version)
+	var city_color = LinePalette.CITY_COLORS.get(city_name, Color.WHITE)
+	$Sprite2D.modulate = city_color.lightened(0.0)  # Make it softer/lighter
+	
 	GameManager.register_port(self)
 	update_ui()
 
