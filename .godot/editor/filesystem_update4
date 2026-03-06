@@ -1,5 +1,8 @@
-res://src/levels/test_level.tscn
-res://src/scripts/ship.gd
-res://src/entities/ship.tscn
-res://src/scripts/ship_movement.gd
-res://src/scripts/ship_container.gd
+res://src/entities/ferry/ferry.gd
+res://src/levels/test_ports.tscn
+res://src/scripts/ferry-line/FerryLine.tscn
+res://src/scripts/ferry-line/LineHandle.tscn
+res://src/scripts/ferry-line/line_handle.gd
+res://src/entities/port.gd
+res://src/scripts/line-manager/LineManager.tscn
+res://src/ui/line_palette.gd

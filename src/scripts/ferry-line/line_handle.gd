@@ -11,6 +11,7 @@ var break_threshold: float = 250.0 # How far until the line snaps
 func _input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		is_dragging = event.pressed
+		get_viewport().set_input_as_handled()
 
 func _process(_delta):
 	if is_dragging:
